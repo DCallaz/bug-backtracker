@@ -24,7 +24,7 @@ public class Backtrack {
         String content = new String(Files.readAllBytes(Paths.get(diff_dir, sha+".diff")),
             StandardCharsets.UTF_8);
         if (bugFix_shas.contains(sha)) {
-          all_diffs.add(new DiffSet(content, sha, bugFix_shas.indexOf(sha)+"", src));
+          all_diffs.add(new DiffSet(content, sha, (bugFix_shas.indexOf(sha)+1)+"", src));
         } else {
           all_diffs.add(new DiffSet(content, sha, src));
         }
@@ -38,6 +38,7 @@ public class Backtrack {
   private static void backtrack_diff_bugs(List<String> shas, List<String> bugFix_shas,
       List<DiffSet> all_diffs) {
     int id = 0;
+    System.out.println("[");
     for (String bugFix_sha : bugFix_shas) {
       int index;
       for (index = 0; index < all_diffs.size(); index++) {
@@ -45,16 +46,16 @@ public class Backtrack {
           break;
         }
       }
-      if (index + 1 >= all_diffs.size()) {
-        break;
-      }
       if (!all_diffs.get(index).getSha().equals(bugFix_sha)) {
         throw new NoSuchElementException("Could not find diff with SHA: "+bugFix_sha);
       }
-      //System.out.println("Backtracking bug with SHA: "+bugFix_sha);
       backtrack(all_diffs, all_diffs.get(index), bugFix_shas, null);
+      if (id < bugFix_shas.size()-1) {
+        System.out.println(",");
+      }
       id++;
     }
+    System.out.println("]");
   }
 
   public static void backtrack(String shafile, String diff_dir, String bugsFile,
@@ -130,8 +131,8 @@ public class Backtrack {
 
   private static void backtrack_bugs(List<String> shas, List<BugFix> bugFixes,
       List<DiffSet> all_diffs, List<String> bugShas, HashMap<String,DiffSet> start_diffs) {
-    System.out.println("[");
     int i  = 0;
+    System.out.println("[");
     for (BugFix bugFix : bugFixes) {
       backtrack(all_diffs, bugFix, bugShas, start_diffs.get(bugFix.getId()));
       if (i < bugFixes.size()-1) {

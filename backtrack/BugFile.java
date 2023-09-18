@@ -94,6 +94,6 @@ public class BugFile {
 
   @Override
   public String toString() {
-    return "\""+file + "\":" + lines;
+    return "\""+file + "\": " + lines;
   }
 }

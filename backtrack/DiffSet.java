@@ -160,7 +160,11 @@ outer:
 
   @Override
   public String toString() {
-    return id + ": "+ getDiffSet().toString();
+    String collec = getDiffSet().toString();
+    if (collec.length() >= 2) {
+      collec = "{" + collec.substring(1, collec.length()-1) + "}";
+    }
+    return "\"" + id + "\": "+ collec;
   }
 
   public String superString() {

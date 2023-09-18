@@ -65,6 +65,6 @@ public class BugFix {
     if (collec.length() >= 2) {
       collec = "{" + collec.substring(1, collec.length()-1) + "}";
     }
-    return "\""+id+"\":"+collec;
+    return "\"" + id + "\": " + collec;
   }
 }
