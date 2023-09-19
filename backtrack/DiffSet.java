@@ -37,6 +37,10 @@ outer:
       line = full[i.getAndIncrement()];
       if (line.startsWith("deleted file mode")) {
         line = full[i.getAndIncrement()];
+        if (i.get() >= full.length) {
+          skip(i, full);
+          continue;
+        }
         line = full[i.getAndIncrement()];
         if (line.startsWith("Binary")) {
           skip(i, full);
