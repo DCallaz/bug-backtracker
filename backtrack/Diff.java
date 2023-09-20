@@ -12,25 +12,23 @@ public class Diff extends BugFile implements Iterable<Chunk> {
   private List<Chunk> touched;
   private String renamedTo;
 
+  public Diff(String file, String rename, String diff) {
+    this(file, diff);
+    this.renamedTo = rename;
+  }
+
   public Diff(String file, String diff) {
     this.file = file;
     touched = new ArrayList<Chunk>();
     processDiff(diff);
     for (Chunk c : touched) {
-      for (int line = c.getNewStart(); line < c.getNewEnd(); line++) {
-        lines.add(line);
-      }
-    }
-  }
-
-  public Diff(String file, String rename, String diff) {
-    this.file = file;
-    this.renamedTo = rename;
-    touched = new ArrayList<Chunk>();
-    processDiff(diff);
-    for (Chunk c : touched) {
-      for (int line = c.getNewStart(); line < c.getNewEnd(); line++) {
-        lines.add(line);
+      // Add line where things were removed if only removals
+      if (c.getNewStart() == c.getNewEnd()) {
+        lines.add(c.getNewStart());
+      } else {
+        for (int line = c.getNewStart(); line < c.getNewEnd(); line++) {
+          lines.add(line);
+        }
       }
     }
   }
@@ -49,7 +47,7 @@ public class Diff extends BugFile implements Iterable<Chunk> {
       char c = (line.length() > 0) ? line.charAt(0) : '\0';
       switch (c) {
         case '@':
-          Pattern p = Pattern.compile("@@ \\-(\\d+),\\d+ \\+(\\d+),\\d+ @@");
+          Pattern p = Pattern.compile("@@ \\-(\\d+)(?:,\\d+)? \\+(\\d+)(?:,\\d+)? @@");
           Matcher m = p.matcher(line);
           if (m.find()) {
             orig = Integer.parseInt(m.group(1));

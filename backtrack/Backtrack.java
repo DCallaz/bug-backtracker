@@ -12,8 +12,7 @@ import java.util.Arrays;
 
 public class Backtrack {
 
-  public static void backtrack_diffs(String shafile, String bugFix_shafile, String diff_dir,
-      String src) {
+  public static void backtrack_diffs(String shafile, String bugFix_shafile, String diff_dir) {
     try {
       List<String> shas = Files.readAllLines(Paths.get(shafile), StandardCharsets.UTF_8);
       shas.remove(shas.size()-1);//Last sha doesn't have a diff
@@ -24,9 +23,9 @@ public class Backtrack {
         String content = new String(Files.readAllBytes(Paths.get(diff_dir, sha+".diff")),
             StandardCharsets.UTF_8);
         if (bugFix_shas.contains(sha)) {
-          all_diffs.add(new DiffSet(content, sha, (bugFix_shas.indexOf(sha)+1)+"", src));
+          all_diffs.add(new DiffSet(content, sha, (bugFix_shas.indexOf(sha)+1)+""));
         } else {
-          all_diffs.add(new DiffSet(content, sha, src));
+          all_diffs.add(new DiffSet(content, sha));
         }
       }
       backtrack_diff_bugs(shas, bugFix_shas, all_diffs);
@@ -58,8 +57,7 @@ public class Backtrack {
     System.out.println("]");
   }
 
-  public static void backtrack(String shafile, String diff_dir, String bugsFile,
-      String src) {
+  public static void backtrack(String shafile, String diff_dir, String bugsFile) {
     try {
       List<String> shas = Files.readAllLines(Paths.get(shafile), StandardCharsets.UTF_8);
       //shas.remove(shas.size()-1);//Last sha doesn't have a diff
@@ -110,9 +108,9 @@ public class Backtrack {
             StandardCharsets.UTF_8);
         int index = bugShas.indexOf(sha);
         if (index != -1) {
-          all_diffs.add(new DiffSet(content, sha, bugIds.get(index), src));
+          all_diffs.add(new DiffSet(content, sha, bugIds.get(index)));
         } else {
-          all_diffs.add(new DiffSet(content, sha, src));
+          all_diffs.add(new DiffSet(content, sha));
         }
       }
 
@@ -120,7 +118,7 @@ public class Backtrack {
       for (String bugId : bugIds) {
         String content = new String(Files.readAllBytes(Paths.get(diff_dir, "start-"+bugId+".diff")),
             StandardCharsets.UTF_8);
-        start_diffs.put(bugId, new DiffSet(content, bugId, src));
+        start_diffs.put(bugId, new DiffSet(content, bugId));
       }
       //System.out.println(shas);
       backtrack_bugs(shas, bugFixes, all_diffs, bugShas, start_diffs);
@@ -188,15 +186,31 @@ public class Backtrack {
     return bugs;
   }*/
 
+  @SuppressWarnings( "rawtypes" )
   public static void main(String[] args) {
+    HashMap<String, TypeKey> keys = new HashMap<String, TypeKey>();
+    keys.put("include", new TypeKey<String>("include", String.class, true));
+    keys.put("exclude", new TypeKey<String>("exclude", String.class, true));
+    keys.put("file-type", new TypeKey<String>("file-type", String.class, true));
+    CommandLine cmd = new CommandLine(keys);
+    args = cmd.getOpts(args);
     if (args.length > 1) {
-      if (args.length > 5) {
-        DiffSet.EXT = (args[5].startsWith(".") ? "" : ".")+args[5];
+      if (cmd.contains("file-type")) {
+        String fileType = cmd.get("file-type");
+        DiffSet.EXT = (fileType.startsWith(".") ? "" : ".")+fileType;
+      }
+      if (cmd.contains("include")) {
+        DiffSet.includes = new ArrayList<String>();
+        DiffSet.includes.add(cmd.get("include"));
+      }
+      if (cmd.contains("exclude")) {
+        DiffSet.excludes = new ArrayList<String>();
+        DiffSet.excludes.add(cmd.get("exclude"));
       }
       if (args[0].equals("lines")) {
-        Backtrack.backtrack(args[1], args[2], args[3], args[4]);
+        Backtrack.backtrack(args[1], args[2], args[3]);
       } else if (args[0].equals("diffs")) {
-        Backtrack.backtrack_diffs(args[1], args[2], args[3], args[4]);
+        Backtrack.backtrack_diffs(args[1], args[2], args[3]);
       } else {
         printUsage();
       }
@@ -206,9 +220,9 @@ public class Backtrack {
   }
 
   public static void printUsage() {
-    System.out.println("USAGE: java Backtrack <mode> ...");
+    System.out.println("USAGE: java Backtrack [--file-type f --include i --exclude e] <mode> ...");
     System.out.println("Where <mode> is one of:");
-    System.out.println("  1. \"lines\" : java Backtrack lines <shafile> <diff dir> <bugFile> <src path> [file type=java]");
-    System.out.println("  2. \"diffs\" : java Backtrack diffs <shafile> <bug shafile> <diff dir> <src path> [file type=java]");
+    System.out.println("  1. \"lines\" : java Backtrack lines <shafile> <diff dir> <bugFile>");
+    System.out.println("  2. \"diffs\" : java Backtrack diffs <shafile> <bug shafile> <diff dir>");
   }
 }
