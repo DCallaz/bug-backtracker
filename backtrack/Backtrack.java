@@ -45,7 +45,8 @@ public class Backtrack {
           break;
         }
       }
-      if (!all_diffs.get(index).getSha().equals(bugFix_sha)) {
+      if (index >= all_diffs.size() ||
+          !all_diffs.get(index).getSha().equals(bugFix_sha)) {
         throw new NoSuchElementException("Could not find diff with SHA: "+bugFix_sha);
       }
       backtrack(all_diffs, all_diffs.get(index), bugFix_shas, null);
