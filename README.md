@@ -39,10 +39,13 @@ history so that the backtracking algorithm can correctly backtrack the bugs into
 earlier versions. This can be done automatically by running the
 `d4j-reidentify.sh` script using the following format:
 ```
-./d4j_reidentify.sh <project> <version> <source directory>
+./d4j_reidentify.sh [-v <version>] [-s <source directory>] <project>
 ```
-This must be done for each version in each project, so bash looping is suggested
-here. This will place `start-<ver>.diff` diff files for each version in the diff
+If no version is given, the script will be run over all of the project's bugs.
+The source directory can be left out, which will just generate the diffs over
+the full project structure (slightly more inefficient and harder to read).
+
+This will place `start-<version>.diff` diff files for each version in the diff
 directory for each project located in `projects`.
 ## Run the backtracking
 In order to run the backtracking, the `backtrack.jar` file has been provided
