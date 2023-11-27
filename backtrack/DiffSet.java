@@ -35,7 +35,7 @@ public class DiffSet extends BugFix {
     if (includes != null) {
       for (String incl : includes) {
         incl = (incl.endsWith("/")) ? incl.substring(0, incl.length()-1) : incl;
-        Pattern p = Pattern.compile("(?:\\w)*/"+incl+"/(\\S+)");
+        Pattern p = Pattern.compile("(?:(?:[\\w\\d-_.])*/|^)"+incl+"/(\\S+).*");
         Matcher m = p.matcher(file);
         matches |= m.lookingAt();
         if (m.lookingAt()) {
@@ -103,10 +103,18 @@ public class DiffSet extends BugFix {
         skip(i, full);
       } else {
         boolean rename = false;
+        String file = null, newFile = null;
         while (!line.startsWith("index") && !line.startsWith("---")
             && !line.startsWith("diff")) {
           if (line.startsWith("rename")) {
             rename = true;
+            if (line.startsWith("rename from")) {
+              file = line.replaceFirst("^rename from ", "");
+              file = checkInclExcl(file);
+            } else {
+              newFile = line.replaceFirst("^rename to ", "");
+              newFile = checkInclExcl(newFile);
+            }
           }
           //System.out.println("Unknown git diff mode: \""+line+"\" skipping...");
           if (i.get() >= full.length) {
@@ -122,7 +130,7 @@ public class DiffSet extends BugFix {
             skip(i, full);
             continue outer;
           }
-          String file = line.substring(4);
+          file = line.substring(4);
           // Checks if the file in included src, and updates the path if it is
           file = checkInclExcl(file);
           if (file == null) { //check if in the source directory
@@ -130,7 +138,7 @@ public class DiffSet extends BugFix {
           } else {
             line = full[i.getAndIncrement()];
             assert(line.startsWith("+++"));
-            String newFile = line.substring(4);
+            newFile = line.substring(4);
             newFile = checkInclExcl(newFile);
             if (newFile == null) { // File is named to something untracked, so remove it
               if (file.endsWith(EXT)) {
@@ -158,6 +166,13 @@ public class DiffSet extends BugFix {
             }
           }
         } else {
+          if (rename && file != null) {
+            if (newFile == null) {
+              collection.add(new Diff(file));
+            } else {
+              collection.add(new Diff(file, newFile, ""));
+            }
+          }
           i.getAndDecrement();
         }
       }

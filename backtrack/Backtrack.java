@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 public class Backtrack {
 
-  public static void backtrack_diffs(String shafile, String bugFix_shafile, String diff_dir) {
+  public static void backtrack_diffs(String shafile, String diff_dir, String bugFix_shafile) {
     try {
       List<String> shas = Files.readAllLines(Paths.get(shafile), StandardCharsets.UTF_8);
       shas.remove(shas.size()-1);//Last sha doesn't have a diff
@@ -117,9 +117,14 @@ public class Backtrack {
 
       HashMap<String,DiffSet> start_diffs = new HashMap<String,DiffSet>();
       for (String bugId : bugIds) {
-        String content = new String(Files.readAllBytes(Paths.get(diff_dir, "start-"+bugId+".diff")),
-            StandardCharsets.UTF_8);
-        start_diffs.put(bugId, new DiffSet(content, bugId));
+        try {
+          String content = new String(Files.readAllBytes(Paths.get(diff_dir,
+                  "start-"+bugId+".diff")),
+              StandardCharsets.UTF_8);
+          start_diffs.put(bugId, new DiffSet(content, bugId));
+        } catch (IOException e) {
+          start_diffs.put(bugId, new DiffSet("", bugId));
+        }
       }
       //System.out.println(shas);
       backtrack_bugs(shas, bugFixes, all_diffs, bugShas, start_diffs);
@@ -200,12 +205,16 @@ public class Backtrack {
         String fileType = cmd.get("file-type");
         DiffSet.EXT = (fileType.startsWith(".") ? "" : ".")+fileType;
       }
-      if (cmd.contains("include")) {
-        DiffSet.includes = new ArrayList<String>();
+      while (cmd.contains("include")) {
+        if (DiffSet.includes == null) {
+          DiffSet.includes = new ArrayList<String>();
+        }
         DiffSet.includes.add(cmd.get("include"));
       }
-      if (cmd.contains("exclude")) {
-        DiffSet.excludes = new ArrayList<String>();
+      while (cmd.contains("exclude")) {
+        if (DiffSet.excludes == null) {
+          DiffSet.excludes = new ArrayList<String>();
+        }
         DiffSet.excludes.add(cmd.get("exclude"));
       }
       if (args[0].equals("lines")) {
@@ -224,6 +233,6 @@ public class Backtrack {
     System.out.println("USAGE: java Backtrack [--file-type f --include i --exclude e] <mode> ...");
     System.out.println("Where <mode> is one of:");
     System.out.println("  1. \"lines\" : java Backtrack lines <shafile> <diff dir> <bugFile>");
-    System.out.println("  2. \"diffs\" : java Backtrack diffs <shafile> <bug shafile> <diff dir>");
+    System.out.println("  2. \"diffs\" : java Backtrack diffs <shafile> <diff dir> <bug shafile>");
   }
 }
