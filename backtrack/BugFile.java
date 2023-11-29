@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 public class BugFile {
   protected SearchList<Integer> lines;
@@ -55,13 +56,13 @@ public class BugFile {
           for (int i = c.getOrigStart(); i < c.getOrigEnd(); i++) {
             if (lines.contains(i)) {
               if (!noRemove) {
-                toRemove.add(i);
+                toRemove.add(lines.indexOf(i));
               }
             }
           }
           //Update from first after the overlap section
           first = lines.binarySearch(c.getOrigEnd(), false);
-          if (lines.get(first) >= c.getOrigEnd()) {
+          if (lines.get(first) >= c.getOrigStart()) {
             updates.add(new IntPair(first, c.getAdds()-c.getRemoves()));
           }
         } else {
@@ -72,7 +73,11 @@ public class BugFile {
     for (IntPair update : updates) {
       lines.updateRange(update.start, (e) -> e + update.amount);
     }
-    lines.removeAll(toRemove);
+    Collections.sort(toRemove);
+    Collections.reverse(toRemove);
+    for (int index : toRemove) {
+      lines.remove(index);
+    }
   }
 
   private static class IntPair {
