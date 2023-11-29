@@ -199,14 +199,14 @@ public class DiffSet extends BugFix {
   }
 
   private static String skip(AtomicInteger i, String[] full) {
-    int start = i.get();
-    String subset = "";
+    StringBuilder subset = new StringBuilder();
     if (i.get() >= full.length) {
-      return subset;
+      return subset.toString();
     }
     String line = full[i.get()];
     while (!line.startsWith("diff")) {
-      subset += line+"\n";
+      subset.append(line);
+      subset.append('\n');
       if (i.get()+1 < full.length) {
         line = full[i.incrementAndGet()];
       } else {
