@@ -44,22 +44,34 @@ public class Diff extends BugFile implements Iterable<Chunk> {
     int orig = 0, new_ = 0;
 
     for (String line : diff.split("\n")) {
+      int combined = 0;
       char c = (line.length() > 0) ? line.charAt(0) : '\0';
       switch (c) {
         case '@':
-          Pattern p = Pattern.compile("@@ \\-(\\d+)(?:,\\d+)? \\+(\\d+)(?:,\\d+)? @@");
+          Pattern p = Pattern.compile("@(@{1,}) (\\-(\\d+)(?:,\\d+)?) (?:\\2 )*\\+(\\d+)(?:,\\d+)? @\\1");
           Matcher m = p.matcher(line);
           if (m.find()) {
-            orig = Integer.parseInt(m.group(1));
-            new_ = Integer.parseInt(m.group(2));
+            orig = Integer.parseInt(m.group(3));
+            new_ = Integer.parseInt(m.group(4));
+            combined = m.group(1).length()-1;
           } else {
             throw new DiffException("Malformed range information: "+line);
           }
           break;
         case '-':
+          if (combined != 0) {
+            if (line.substring(1, combined+1).matches("\\-+")) {
+              throw new DiffException("Combined diffs do not agree: "+line);
+            }
+          }
           rems++;
           break;
         case '+':
+          if (combined != 0) {
+            if (line.substring(1, combined+1).matches("\\++")) {
+              throw new DiffException("Combined diffs do not agree: "+line);
+            }
+          }
           adds++;
           break;
         default:
