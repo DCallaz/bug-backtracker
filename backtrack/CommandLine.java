@@ -29,7 +29,7 @@ public class CommandLine {
           opt = opt.substring(1);
         }
         TypeKey key = this.keys.get(opt);
-        if (key.isArg()) {
+        if (key != null && key.isArg()) {
           String arg = args[i++];
           Class type = key.type();
           // Check the type and convert accordingly
@@ -45,8 +45,10 @@ public class CommandLine {
             }
             opts.put(key, arg.charAt(0));
           }
-        } else {
+        } else if (key != null) {
           opts.put(key, true);
+        } else {
+          System.err.println("Unrecognized option: "+opt);
         }
       } else {
         new_args.add(opt);
