@@ -77,7 +77,7 @@ public class DiffSet extends BugFix {
       //System.out.println(line);
       assert(line.startsWith("diff"));
       line = full[i.getAndIncrement()];
-      if (line.startsWith("deleted file mode")) {
+      if (line.startsWith("new file mode")) {
         line = full[i.getAndIncrement()];
         if (i.get() >= full.length) {
           skip(i, full);
@@ -87,11 +87,11 @@ public class DiffSet extends BugFix {
         if (line.startsWith("Binary")) {
           skip(i, full);
         } else {
-          if (!line.startsWith("---")) {
+          if (!line.startsWith("+++")) {
             skip(i, full);
             continue;
           }
-          assert(line.startsWith("---"));
+          assert(line.startsWith("+++"));
           String file = line.substring(4);
           file = checkInclExcl(file);
           if (file != null && file.endsWith(EXT)) {
@@ -99,7 +99,7 @@ public class DiffSet extends BugFix {
           }
           skip(i, full);
         }
-      } else if (line.startsWith("new file mode")) {
+      } else if (line.startsWith("deleted file mode")) {
         skip(i, full);
       } else {
         boolean rename = false;
@@ -109,11 +109,11 @@ public class DiffSet extends BugFix {
           if (line.startsWith("rename")) {
             rename = true;
             if (line.startsWith("rename from")) {
-              file = line.replaceFirst("^rename from ", "");
-              file = checkInclExcl(file);
-            } else {
-              newFile = line.replaceFirst("^rename to ", "");
+              newFile = line.replaceFirst("^rename from ", "");
               newFile = checkInclExcl(newFile);
+            } else {
+              file = line.replaceFirst("^rename to ", "");
+              file = checkInclExcl(file);
             }
           }
           //System.out.println("Unknown git diff mode: \""+line+"\" skipping...");
@@ -130,39 +130,39 @@ public class DiffSet extends BugFix {
             skip(i, full);
             continue outer;
           }
+          newFile = line.substring(4);
+          newFile = checkInclExcl(newFile);
+
+          line = full[i.getAndIncrement()];
+          assert(line.startsWith("+++"));
+
           file = line.substring(4);
-          // Checks if the file in included src, and updates the path if it is
           file = checkInclExcl(file);
+
           if (file == null) { //check if in the source directory
             skip(i, full);
+          } else if (newFile == null) { // File is named to something untracked, so remove it
+            if (file.endsWith(EXT)) {
+              collection.add(new Diff(file));
+            }
+            skip(i, full);
           } else {
-            line = full[i.getAndIncrement()];
-            assert(line.startsWith("+++"));
-            newFile = line.substring(4);
-            newFile = checkInclExcl(newFile);
-            if (newFile == null) { // File is named to something untracked, so remove it
-              if (file.endsWith(EXT)) {
-                collection.add(new Diff(file));
-              }
+            if (!rename) { // If this is not a rename, the file names must be =
+              assert(file.equals(newFile));
+            }
+
+            if (!file.endsWith(EXT)) {
+              //System.out.println("Skipping file: "+file);
               skip(i, full);
             } else {
-              if (!rename) { // If this is not a rename, the file names must be =
-                assert(file.equals(newFile));
-              }
-
-              if (!file.endsWith(EXT)) {
-                //System.out.println("Skipping file: "+file);
-                skip(i, full);
+              String subset = skip(i, full);
+              Diff d;
+              if (rename) {
+                d = new Diff(file, newFile, subset);
               } else {
-                String subset = skip(i, full);
-                Diff d;
-                if (rename) {
-                  d = new Diff(file, newFile, subset);
-                } else {
-                  d = new Diff(file, subset);
-                }
-                collection.add(d);
+                d = new Diff(file, subset);
               }
+              collection.add(d);
             }
           }
         } else {

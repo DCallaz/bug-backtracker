@@ -21,7 +21,6 @@ mkdir diffs
 > all_shas
 for sha in $shas; do
   #echo newer ${newer_shas[$i]} older ${older_shas[$i]}
-  #git show -R --src-prefix="b/" --dst-prefix="a/" -l10000 --format="" $sha > diffs/$sha.diff
-  git show -R -l10000 --format="" $sha > diffs/$sha.diff
+  git show -l10000 --format="" $sha > diffs/$sha.diff
   echo $sha >> all_shas
 done

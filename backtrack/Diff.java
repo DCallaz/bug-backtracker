@@ -43,37 +43,44 @@ public class Diff extends BugFile implements Iterable<Chunk> {
     int adds = 0, rems = 0;
     int orig = 0, new_ = 0;
 
+    int comps = 1;
     for (String line : diff.split("\n")) {
-      int combined = 0;
-      char c = (line.length() > 0) ? line.charAt(0) : '\0';
+      String s = (line.length() > comps) ? line.substring(0, comps) : line+" ";
+      Matcher tmp = Pattern.compile("(?:([-+@\\\\])| )+").matcher(s);
+      tmp.matches();
+      char c = (tmp.group(1) == null) ? ' ' : tmp.group(1).charAt(0);
       switch (c) {
         case '@':
-          Pattern p = Pattern.compile("@(@{1,}) (\\-(\\d+)(?:,\\d+)?) (?:\\2 )*\\+(\\d+)(?:,\\d+)? @\\1");
+          Pattern p = Pattern.compile("@(@{1,}) (\\-(\\d+)(?:,\\d+)?) (?:\\-(?:\\d+)(?:,\\d+)? )*\\+(\\d+)(?:,\\d+)? @\\1");
           Matcher m = p.matcher(line);
           if (m.find()) {
-            orig = Integer.parseInt(m.group(3));
-            new_ = Integer.parseInt(m.group(4));
-            combined = m.group(1).length()-1;
+            orig = Integer.parseInt(m.group(4));
+            new_ = Integer.parseInt(m.group(3));
+            comps = m.group(1).length();
           } else {
             throw new DiffException("Malformed range information: "+line);
           }
           break;
         case '-':
-          if (combined != 0) {
-            if (line.substring(1, combined+1).matches("\\-+")) {
-              throw new DiffException("Combined diffs do not agree: "+line);
-            }
-          }
-          rems++;
-          break;
-        case '+':
-          if (combined != 0) {
-            if (line.substring(1, combined+1).matches("\\++")) {
-              throw new DiffException("Combined diffs do not agree: "+line);
+          if (comps > 1) {
+            if (!s.matches("^\\-+$")) {
+              continue;
+              //throw new DiffException("Combined diffs do not agree: "+line);
             }
           }
           adds++;
           break;
+        case '+':
+          if (comps > 1) {
+            if (!s.matches("^\\++$")) {
+              continue;
+              //throw new DiffException("Combined diffs do not agree: "+line);
+            }
+          }
+          rems++;
+          break;
+        case '\\':
+          continue;
         default:
           if (adds+rems > 0) {
             touched.add(new Chunk(orig, new_, adds, rems));
