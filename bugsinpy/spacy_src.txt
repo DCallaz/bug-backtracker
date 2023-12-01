@@ -1,0 +1,2 @@
+--include spacy
+--exclude spacy/tests

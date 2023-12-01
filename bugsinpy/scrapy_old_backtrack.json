@@ -1,0 +1,825 @@
+[
+{
+"bug": {"1": {"utils/misc.py": [140, 146, 148, 150]}}
+,"2": {"1": {"utils/misc.py": [140, 146, 148, 150]}}
+,"3": {"1": {"utils/misc.py": [135, 141, 143, 145]}}
+,"4": {"1": {"utils/misc.py": [136, 142, 144, 146]}}
+,"5": {"1": {"utils/misc.py": [136, 142, 144, 146]}}
+,"6": {"1": {"utils/misc.py": [134, 140, 142, 144]}}
+,"d3aa1e86664b02a20522abbb265dc9b91b95f111": "failed"
+}
+,
+{
+"bug": {"2": {"spidermiddlewares/offsite.py": [57, 58, 62]}}
+,"3": {"2": {"spidermiddlewares/offsite.py": [57, 58, 62]}}
+,"4": {"2": {"spidermiddlewares/offsite.py": [57, 58, 62]}}
+,"5": {"2": {"spidermiddlewares/offsite.py": [57, 58, 62]}}
+,"6": {"2": {"spidermiddlewares/offsite.py": [57, 58]}}
+,"7": {"2": {"spidermiddlewares/offsite.py": [62]}}
+,"8": {"2": {"spidermiddlewares/offsite.py": [62]}}
+,"9": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"10": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"11": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"12": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"13": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"14": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"15": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"16": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"17": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"18": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"19": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"20": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"21": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"22": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"23": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"24": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"25": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"26": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"27": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"29": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"28": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"30": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"31": {"2": {"spidermiddlewares/offsite.py": [56]}}
+,"32": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"33": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"34": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"36": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"35": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"37": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"38": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"39": {"2": {"spidermiddlewares/offsite.py": [55]}}
+,"65aa9ccc704cfde74dd1169ef0f963ade16a4d5e": "failed"
+}
+,
+{
+"bug": {"3": {"_monkeypatches.py": [1], "cmdline.py": [1], "commands/bench.py": [4], "commands/check.py": [1], "commands/fetch.py": [1, 47], "commands/genspider.py": [1], "commands/list.py": [1], "commands/parse.py": [1], "commands/settings.py": [1], "commands/startproject.py": [1], "commands/version.py": [1], "core/downloader/__init__.py": [1, 7, 191], "core/downloader/handlers/__init__.py": [4, 6, 26], "core/downloader/handlers/ftp.py": [33], "core/downloader/handlers/http.py": [1], "core/downloader/handlers/http11.py": [5, 8, 177], "core/downloader/handlers/s3.py": [1], "core/downloader/middleware.py": [6, 39, 54, 66], "core/downloader/webclient.py": [2], "core/spidermw.py": [8, 39, 40], "crawler.py": [1, 2, 3, 6, 24, 91, 94, 208], "downloadermiddlewares/ajaxcrawl.py": [2, 5, 68], "downloadermiddlewares/cookies.py": [2, 8, 9, 56, 65, 85, 86, 87, 88], "downloadermiddlewares/decompression.py": [10, 13, 15, 77], "downloadermiddlewares/httpproxy.py": [2, 3], "downloadermiddlewares/redirect.py": [2, 10], "downloadermiddlewares/robotstxt.py": [8, 14], "dupefilters.py": [1], "exporters.py": [10, 11, 15, 18, 63, 65, 145, 149, 183, 184, 186, 190, 204, 234, 322, 327], "extensions/feedexport.py": [13, 67], "extensions/httpcache.py": [1, 4, 11], "extensions/memdebug.py": [8, 30], "extensions/spiderstate.py": [2, 8], "http/cookies.py": [2, 3, 5, 167, 172, 173, 191], "http/headers.py": [1, 21, 31, 34, 70], "http/request/__init__.py": [7, 62], "http/request/form.py": [8, 106, 210], "http/request/rpc.py": [7], "http/response/__init__.py": [7, 91], "http/response/text.py": [8, 18, 33, 34, 40, 83, 87, 160], "item.py": [7, 8, 13, 17, 79, 131], "link.py": [7, 14, 15], "linkextractors/__init__.py": [9, 11], "linkextractors/htmlparser.py": [5, 6, 44], "linkextractors/lxmlhtml.py": [4, 12, 24, 69], "linkextractors/regex.py": [2, 9], "linkextractors/sgml.py": [4, 5, 51], "loader/__init__.py": [8, 73, 83], "loader/processors.py": [6], "mail.py": [7, 8, 9, 10, 11, 13, 20], "pipelines/files.py": [8, 11, 12, 13, 14, 15, 30, 155, 162, 203, 251], "pipelines/images.py": [8, 128], "pipelines/media.py": [1], "responsetypes.py": [5, 8, 11, 38, 56, 61], "robotstxt.py": [4, 5, 6, 10, 14, 27, 28, 58, 71, 72], "settings/__init__.py": [1, 3, 10, 25, 175, 196, 286, 315, 319, 322, 379, 447], "settings/default_settings.py": [20, 180], "shell.py": [6], "signalmanager.py": [1], "spiderloader.py": [2], "spidermiddlewares/referer.py": [5, 6, 13, 324], "spiders/crawl.py": [11, 26], "spiders/sitemap.py": [3, 24, 88], "squeues.py": [6], "utils/benchserver.py": [2, 3], "utils/boto.py": [3, 11], "utils/conf.py": [4, 7, 23, 34, 38, 54], "utils/curl.py": [4, 5, 7, 78], "utils/datatypes.py": [12, 15, 151, 226, 247, 248, 249, 250, 251, 252, 309, 310], "utils/display.py": [5], "utils/engine.py": [3], "utils/gz.py": [1, 2, 4, 14, 15, 16, 29], "utils/httpobj.py": [4, 6], "utils/iterators.py": [1, 3, 5, 10, 63, 101, 128, 140], "utils/misc.py": [9, 15, 85, 94], "utils/ossignal.py": [1], "utils/project.py": [2, 10, 11], "utils/python.py": [10, 67, 70, 89, 91, 92, 104, 105, 112, 114, 115, 140, 164, 188, 198, 302, 303, 305, 347], "utils/reqser.py": [4, 5, 55, 88, 93], "utils/request.py": [6, 8, 11, 12, 14, 99], "utils/response.py": [11, 39], "utils/sitemap.py": [8, 9, 11], "utils/spider.py": [4, 7, 23], "utils/ssl.py": [6, 15], "utils/test.py": [5], "utils/testproc.py": [1], "utils/testsite.py": [1], "utils/trackref.py": [12, 16, 38, 44, 58, 62, 67, 69], "utils/url.py": [10]}}
+,"4": {"3": {"cmdline.py": [2], "commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/parse.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [3], "core/downloader/__init__.py": [2, 9, 193], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [9], "crawler.py": [2, 7, 25, 99, 105], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10, 17], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 13], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [212], "item.py": [9, 15, 25, 139], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [10, 75, 85], "mail.py": [17, 30], "pipelines/files.py": [11, 13, 37, 161, 168, 209, 257], "pipelines/images.py": [133], "pipelines/media.py": [3], "responsetypes.py": [6, 10, 40], "robotstxt.py": [5, 7, 26], "settings/__init__.py": [2, 17], "settings/default_settings.py": [22, 182], "shell.py": [8], "signalmanager.py": [2], "spiderloader.py": [3], "spidermiddlewares/referer.py": [7, 325], "spiders/crawl.py": [13], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 12, 28, 39, 43, 59], "utils/curl.py": [8, 79], "utils/datatypes.py": [14, 23, 159, 234, 256, 257, 258, 259, 260, 318, 319], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 21, 40], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [10], "utils/ossignal.py": [3], "utils/python.py": [11, 114, 168, 192, 205], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"5": {"3": {"cmdline.py": [2], "commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/parse.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [3], "core/downloader/__init__.py": [2, 9, 193], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [9], "crawler.py": [2, 7, 25, 99, 105], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10, 17], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 10], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [212], "item.py": [9, 15, 25, 139], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 76, 86], "mail.py": [17, 30], "pipelines/files.py": [11, 13, 37, 161, 168, 209, 257], "pipelines/images.py": [133], "pipelines/media.py": [3], "responsetypes.py": [6, 10, 40], "robotstxt.py": [5, 7, 26], "settings/__init__.py": [2, 17], "settings/default_settings.py": [22, 182], "shell.py": [8], "signalmanager.py": [2], "spiderloader.py": [3], "spidermiddlewares/referer.py": [7, 325], "spiders/crawl.py": [13], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 12, 28, 39, 43, 59], "utils/curl.py": [8, 79], "utils/datatypes.py": [14, 23, 159, 234, 256, 257, 258, 259, 260, 318, 319], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 21, 40], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [10], "utils/ossignal.py": [3], "utils/python.py": [11, 114, 168, 192, 205], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"6": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/parse.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [3], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 24, 93, 99], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 10], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [205], "item.py": [7, 13, 16, 100], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [17, 30], "pipelines/files.py": [10, 12, 35, 159, 166, 194, 242], "pipelines/images.py": [129], "pipelines/media.py": [3], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 11], "settings/default_settings.py": [22, 177], "shell.py": [8], "signalmanager.py": [2], "spiderloader.py": [3], "spidermiddlewares/referer.py": [7, 325], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 9, 25, 36, 40, 56], "utils/datatypes.py": [13, 16, 152, 227, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/ossignal.py": [3], "utils/python.py": [11, 180, 204, 217], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"7": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [3], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 24, 93, 99], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 10], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [200], "item.py": [7, 13, 16, 100], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [17, 30], "pipelines/files.py": [10, 12, 35, 159, 166, 194, 284], "pipelines/images.py": [128], "pipelines/media.py": [3], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [22, 176], "shell.py": [8], "signalmanager.py": [2], "spiderloader.py": [3], "spidermiddlewares/referer.py": [7, 325], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 9, 25, 36, 40, 56], "utils/datatypes.py": [13, 16, 152, 227, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [11, 180, 224, 237], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"8": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [3], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 24, 93, 99], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 10], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [201], "item.py": [7, 13, 16, 100], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [17, 30], "pipelines/files.py": [10, 12, 35, 159, 166, 194, 284], "pipelines/images.py": [128], "pipelines/media.py": [3], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [22, 176], "shell.py": [8], "signalmanager.py": [2], "spiderloader.py": [3], "spidermiddlewares/referer.py": [7, 325], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 9, 25, 36, 40, 56], "utils/datatypes.py": [13, 16, 152, 227, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [11, 180, 224, 237], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"9": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 24, 90, 96], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 10], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [201], "item.py": [7, 13, 16, 100], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 26], "pipelines/files.py": [10, 12, 35, 151, 158, 186, 234], "pipelines/images.py": [125], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [22, 176], "shell.py": [8], "signalmanager.py": [2], "spidermiddlewares/referer.py": [7, 377], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 9, 25, 36, 40, 56], "utils/datatypes.py": [13, 16, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"10": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 100], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 26], "pipelines/files.py": [10, 12, 35, 151, 158, 186, 234], "pipelines/images.py": [125], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 173], "shell.py": [8], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 9, 25, 36, 47, 56], "utils/datatypes.py": [13, 16, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"11": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 100], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 26], "pipelines/files.py": [10, 12, 35, 151, 158, 186, 234], "pipelines/images.py": [125], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 173], "shell.py": [8], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [4, 9, 25, 36, 47, 56], "utils/datatypes.py": [13, 16, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"12": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/settings.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/downloader/handlers/http11.py": [7], "core/downloader/middleware.py": [8], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [19], "extensions/feedexport.py": [68], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 26], "pipelines/files.py": [10, 12, 35, 151, 158, 186, 234], "pipelines/images.py": [125], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 173], "shell.py": [8], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/boto.py": [6, 14], "utils/conf.py": [3, 8, 24, 35, 39, 47], "utils/datatypes.py": [13, 16, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [7, 8, 11, 18, 37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"13": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [6, 7], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 260, 252], "pipelines/images.py": [125], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 174], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [10], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"14": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 260, 252], "pipelines/images.py": [125], "responsetypes.py": [6, 10, 40], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 174], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"15": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 259, 251], "pipelines/images.py": [124], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 174], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"16": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 259, 251], "pipelines/images.py": [124], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 174], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"17": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 243, 235], "pipelines/images.py": [91], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 176], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"18": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 243, 235], "pipelines/images.py": [91], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 176], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"19": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 243, 235], "pipelines/images.py": [91], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 176], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"20": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 70], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [70], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 35, 202, 209, 243, 235], "pipelines/images.py": [91], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 176], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 178, 202, 215], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"21": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 7, 22, 85, 91], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [66], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 34, 201, 208, 237, 229], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 172], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"22": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [66], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 74], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 33, 166, 173, 201, 193], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [6], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"23": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [65], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"24": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 15], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"25": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"26": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"27": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [22], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [15, 152, 249, 250, 251, 252, 253, 304, 305], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"29": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [195], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [23, 168], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [37], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"28": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 25], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 83], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [189], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 166], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 41, 50, 37, 45], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [21], "utils/httpobj.py": [6], "utils/iterators.py": [10, 15], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"30": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 24], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 78, 84], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [179], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 159], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 24, 44, 31, 39], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [21], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"31": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 24], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 76, 80], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [62], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [179], "item.py": [7, 13, 16, 97], "link.py": [13, 20, 21], "linkextractors/__init__.py": [11], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 74, 84], "mail.py": [14, 24], "pipelines/files.py": [10, 12, 32, 139, 146, 174, 166], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 159], "signalmanager.py": [2], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [11], "spiders/sitemap.py": [4], "utils/conf.py": [3, 24, 44, 31, 39], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [21], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [13, 18, 40, 46, 60, 64, 69, 71]}}
+,"32": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [8], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 24], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 76, 80], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [177], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/__init__.py": [12], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 24], "pipelines/files.py": [10, 13, 31, 138, 145, 173, 165], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 166], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 35, 29], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 14, 17], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [18, 40, 46, 60, 66, 69, 71]}}
+,"33": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [2, 9, 192], "core/downloader/handlers/__init__.py": [5, 24], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 76, 80], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [176], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/__init__.py": [10], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 24], "pipelines/files.py": [10, 13, 31, 138, 145, 173, 165], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 166], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 35, 29], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 14, 17], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [19, 40, 46, 60, 66, 69, 71]}}
+,"34": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [2, 8, 191], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 76, 80], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [176], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/__init__.py": [10], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 24], "pipelines/files.py": [10, 13, 31, 138, 145, 173, 165], "pipelines/images.py": [88], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 166], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 35, 29], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 14, 17], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [17, 36, 41, 50, 54, 56, 58]}}
+,"36": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [2, 8, 191], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 76, 80], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 10], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [176], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/__init__.py": [10], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 24], "pipelines/files.py": [10, 13, 30, 137, 144, 172, 164], "pipelines/images.py": [87], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 166], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 35, 29], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [6], "utils/request.py": [7, 14, 17], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [17, 36, 41, 50, 54, 56, 58]}}
+,"35": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/list.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [2, 8, 191], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 76, 80], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 9], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "dupefilters.py": [2], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [176], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/__init__.py": [10], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 25], "pipelines/files.py": [10, 13, 30, 137, 144, 172, 164], "pipelines/images.py": [87], "responsetypes.py": [6, 10, 39], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 166], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 35, 29], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [10, 177, 194, 207], "utils/reqser.py": [5], "utils/request.py": [7, 14, 17], "utils/sitemap.py": [8], "utils/spider.py": [6, 9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [17, 36, 41, 50, 54, 56, 58]}}
+,"37": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [1, 6, 173], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 77, 81], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 9], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [171], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 25], "pipelines/files.py": [11, 13, 30, 133, 140, 168, 160], "pipelines/images.py": [87], "responsetypes.py": [7, 11, 38], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 158], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 21, 15], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [14, 132, 145, 158], "utils/reqser.py": [5], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [19, 36, 41, 50, 54, 56, 58]}}
+,"38": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [1, 6, 173], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 75, 79], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 9], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [171], "item.py": [7, 13, 16, 97], "link.py": [10, 17], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 25], "pipelines/files.py": [11, 13, 29, 132, 139, 167, 159], "pipelines/images.py": [87], "responsetypes.py": [7, 11, 38], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 158], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 21, 15], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [14, 132, 145, 158], "utils/reqser.py": [5], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [19, 36, 41, 50, 54, 56, 58]}}
+,"39": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [1, 6, 173], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 6, 21, 75, 79], "downloadermiddlewares/ajaxcrawl.py": [3, 7, 71], "downloadermiddlewares/cookies.py": [3, 9], "downloadermiddlewares/decompression.py": [10, 20, 82], "downloadermiddlewares/robotstxt.py": [10], "exporters.py": [17], "extensions/feedexport.py": [61], "extensions/httpcache.py": [3, 9], "extensions/memdebug.py": [9, 31], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [171], "item.py": [7, 12, 15, 96], "link.py": [10, 17], "linkextractors/sgml.py": [5, 6], "loader/__init__.py": [9, 43, 53], "mail.py": [14, 25], "pipelines/files.py": [11, 13, 29, 132, 139, 167, 159], "pipelines/images.py": [87], "responsetypes.py": [7, 11, 38], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 158], "spidermiddlewares/referer.py": [40], "spiders/crawl.py": [10], "spiders/sitemap.py": [3], "utils/conf.py": [3, 21, 15], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [11, 16], "utils/misc.py": [8], "utils/python.py": [14, 132, 145, 158], "utils/reqser.py": [5], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [9, 24], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [19, 36, 41, 50, 54, 56, 58]}}
+,"40": {"3": {"commands/check.py": [2], "commands/genspider.py": [2], "commands/startproject.py": [2], "commands/version.py": [7], "core/downloader/__init__.py": [1, 6, 173], "core/downloader/handlers/__init__.py": [4, 18], "core/downloader/handlers/http.py": [2], "core/spidermw.py": [7], "crawler.py": [2, 5, 20, 65, 69], "exporters.py": [17], "http/headers.py": [2, 73], "http/request/__init__.py": [8], "http/request/form.py": [171], "item.py": [7, 12, 15, 93], "link.py": [10, 17], "mail.py": [12], "responsetypes.py": [7, 11, 38], "settings/__init__.py": [2, 14], "settings/default_settings.py": [21, 158], "utils/conf.py": [3, 21, 15], "utils/datatypes.py": [12, 137, 226, 227, 228, 229, 230, 281, 282], "utils/display.py": [6], "utils/engine.py": [4], "utils/gz.py": [20], "utils/httpobj.py": [6], "utils/iterators.py": [9, 13], "utils/misc.py": [8], "utils/python.py": [14, 132, 145, 158], "utils/reqser.py": [5], "utils/request.py": [7, 13, 16], "utils/sitemap.py": [8], "utils/spider.py": [22], "utils/test.py": [5], "utils/testproc.py": [2], "utils/trackref.py": [19, 36, 41, 50, 54, 56, 58]}}
+}
+,
+{
+"bug": {"4": {"downloadermiddlewares/redirect.py": [2, 73]}}
+,"5": {"4": {"downloadermiddlewares/redirect.py": [2, 73]}}
+,"6": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"7": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"8": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"9": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"10": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"11": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"12": {"4": {"downloadermiddlewares/redirect.py": [2, 71]}}
+,"13": {"4": {"downloadermiddlewares/redirect.py": [2, 65]}}
+,"14": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"15": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"16": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"17": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"18": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"19": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"20": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"21": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"22": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"23": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"24": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"25": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"26": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"27": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"29": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"28": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"30": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"31": {"4": {"downloadermiddlewares/redirect.py": [2, 64]}}
+,"32": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"33": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"34": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"36": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"35": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"37": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"38": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"39": {"4": {"downloadermiddlewares/redirect.py": [2]}}
+,"65aa9ccc704cfde74dd1169ef0f963ade16a4d5e": "failed"
+}
+,
+{
+"bug": {"5": {"exporters.py": [34], "extensions/feedexport.py": [109, 245], "http/request/__init__.py": [69], "utils/datatypes.py": [249], "utils/python.py": [306]}}
+,"6": {"5": {"http/request/__init__.py": [61]}}
+,"7": {"5": {"http/request/__init__.py": [61]}}
+,"8": {"5": {"http/request/__init__.py": [61]}}
+,"9": {"5": {"http/request/__init__.py": [57]}}
+,"10": {"5": {"http/request/__init__.py": [56]}}
+,"11": {"5": {"http/request/__init__.py": [56]}}
+,"12": {"5": {"http/request/__init__.py": [56]}}
+,"13": {"5": {"http/request/__init__.py": [56]}}
+,"14": {"5": {"http/request/__init__.py": [56]}}
+,"15": {"5": {"http/request/__init__.py": [56]}}
+,"16": {"5": {"http/request/__init__.py": [56]}}
+,"17": {"5": {"http/request/__init__.py": [56]}}
+,"18": {"5": {"http/request/__init__.py": [56]}}
+,"19": {"5": {"http/request/__init__.py": [56]}}
+,"20": {"5": {"http/request/__init__.py": [56]}}
+,"21": {"5": {"http/request/__init__.py": [56]}}
+,"22": {"5": {"http/request/__init__.py": [56]}}
+,"23": {"5": {"http/request/__init__.py": [56]}}
+,"24": {"5": {"http/request/__init__.py": [56]}}
+,"25": {"5": {"http/request/__init__.py": [56]}}
+,"26": {"5": {"http/request/__init__.py": [56]}}
+,"27": {"5": {"http/request/__init__.py": [56]}}
+,"29": {"5": {"http/request/__init__.py": [56]}}
+,"28": {"5": {"http/request/__init__.py": [56]}}
+,"30": {"5": {"http/request/__init__.py": [56]}}
+,"31": {"5": {"http/request/__init__.py": [56]}}
+,"32": {"5": {"http/request/__init__.py": [56]}}
+,"33": {"5": {"http/request/__init__.py": [56]}}
+,"34": {"5": {"http/request/__init__.py": [56]}}
+,"36": {"5": {"http/request/__init__.py": [56]}}
+,"35": {"5": {"http/request/__init__.py": [56]}}
+,"37": {"5": {"http/request/__init__.py": [58]}}
+,"38": {"5": {"http/request/__init__.py": [58]}}
+,"39": {"5": {"http/request/__init__.py": [58]}}
+,"40": {"5": {"http/request/__init__.py": [58]}}
+}
+,
+{
+"bug": {"6": {"contracts/__init__.py": [87]}}
+,"7": {"6": {"contracts/__init__.py": [87]}}
+,"8": {"6": {"contracts/__init__.py": [87]}}
+,"9": {"6": {"contracts/__init__.py": [87]}}
+,"10": {"6": {"contracts/__init__.py": [87]}}
+,"11": {"6": {"contracts/__init__.py": [87]}}
+,"12": {"6": {"contracts/__init__.py": [87]}}
+,"13": {"6": {"contracts/__init__.py": [87]}}
+,"14": {"6": {"contracts/__init__.py": [87]}}
+,"15": {"6": {"contracts/__init__.py": [87]}}
+,"16": {"6": {"contracts/__init__.py": [87]}}
+,"17": {"6": {"contracts/__init__.py": [87]}}
+,"18": {"6": {"contracts/__init__.py": [87]}}
+,"19": {"6": {"contracts/__init__.py": [87]}}
+,"20": {"6": {"contracts/__init__.py": [87]}}
+,"21": {"6": {"contracts/__init__.py": [87]}}
+,"22": {"6": {"contracts/__init__.py": [87]}}
+,"23": {"6": {"contracts/__init__.py": [87]}}
+,"24": {"6": {"contracts/__init__.py": [87]}}
+,"25": {"6": {"contracts/__init__.py": [87]}}
+,"26": {"6": {"contracts/__init__.py": [87]}}
+,"27": {"6": {"contracts/__init__.py": [87]}}
+,"29": {"6": {"contracts/__init__.py": [87]}}
+,"28": {"6": {"contracts/__init__.py": [87]}}
+,"30": {"6": {"contracts/__init__.py": [87]}}
+,"31": {"6": {"contracts/__init__.py": [87]}}
+,"32": {"6": {"contracts/__init__.py": [87]}}
+,"33": {"6": {"contracts/__init__.py": [87]}}
+,"34": {"6": {"contracts/__init__.py": [87]}}
+,"36": {"6": {"contracts/__init__.py": [87]}}
+,"35": {"6": {"contracts/__init__.py": [87]}}
+,"37": {"6": {"contracts/__init__.py": [87]}}
+,"38": {"6": {"contracts/__init__.py": [87]}}
+,"39": {"6": {"contracts/__init__.py": [87]}}
+,"40": {"6": {"contracts/__init__.py": [87]}}
+}
+,
+{
+"bug": {"7": {"core/downloader/tls.py": [43, 58, 59, 68], "linkextractors/__init__.py": [31]}}
+,"8": {"7": {"core/downloader/tls.py": [43, 68]}}
+,"9": {"7": {"core/downloader/tls.py": [43, 68]}}
+,"10": {"7": {"core/downloader/tls.py": [43, 68]}}
+,"11": {"7": {"core/downloader/tls.py": [43, 68]}}
+,"12": {"7": {"core/downloader/tls.py": [36, 53]}}
+,"ed1e4d8df33e53de1516cb025dc60cca9615f637": "failed"
+}
+,
+{
+"bug": {"8": {"http/response/__init__.py": [123]}}
+,"9": {"8": {"http/response/__init__.py": [123]}}
+,"10": {"8": {"http/response/__init__.py": [121]}}
+,"11": {"8": {"http/response/__init__.py": [151]}}
+,"12": {"8": {"http/response/__init__.py": [121]}}
+,"13": {"8": {"http/response/__init__.py": [121]}}
+,"14": {"8": {"http/response/__init__.py": [100]}}
+,"15": {"8": {"http/response/__init__.py": [100]}}
+,"16": {"8": {"http/response/__init__.py": [100]}}
+,"17": {"8": {"http/response/__init__.py": [100]}}
+,"18": {"8": {"http/response/__init__.py": [100]}}
+,"19": {"8": {"http/response/__init__.py": [100]}}
+,"20": {"8": {"http/response/__init__.py": [100]}}
+,"21": {"8": {"http/response/__init__.py": [100]}}
+,"22": {"8": {"http/response/__init__.py": [100]}}
+,"23": {"8": {"http/response/__init__.py": [100]}}
+,"24": {"8": {"http/response/__init__.py": [100]}}
+,"25": {"8": {"http/response/__init__.py": [100]}}
+,"26": {"8": {"http/response/__init__.py": [100]}}
+,"27": {"8": {"http/response/__init__.py": [100]}}
+,"29": {"8": {"http/response/__init__.py": [100]}}
+,"28": {"8": {"http/response/__init__.py": [101]}}
+,"30": {"8": {"http/response/__init__.py": [100]}}
+,"31": {"8": {"http/response/__init__.py": [100]}}
+,"32": {"8": {"http/response/__init__.py": [100]}}
+,"33": {"8": {"http/response/__init__.py": [100]}}
+,"34": {"8": {"http/response/__init__.py": [100]}}
+,"36": {"8": {"http/response/__init__.py": [100]}}
+,"35": {"8": {"http/response/__init__.py": [100]}}
+,"37": {"8": {"http/response/__init__.py": [102]}}
+,"38": {"8": {"http/response/__init__.py": [102]}}
+,"39": {"8": {"http/response/__init__.py": [102]}}
+,"40": {"8": {"http/response/__init__.py": [102]}}
+}
+,
+{
+"bug": {"9": {"pipelines/images.py": [135]}}
+,"10": {"9": {"pipelines/images.py": [135]}}
+,"11": {"9": {"pipelines/images.py": [135]}}
+,"12": {"9": {"pipelines/images.py": [135]}}
+,"13": {"9": {"pipelines/images.py": [135]}}
+,"14": {"9": {"pipelines/images.py": [135]}}
+,"15": {"9": {"pipelines/images.py": [134]}}
+,"16": {"9": {"pipelines/images.py": [134]}}
+,"17": {"9": {"pipelines/images.py": [101]}}
+,"18": {"9": {"pipelines/images.py": [101]}}
+,"19": {"9": {"pipelines/images.py": [101]}}
+,"20": {"9": {"pipelines/images.py": [101]}}
+,"21": {"9": {"pipelines/images.py": [98]}}
+,"22": {"9": {"pipelines/images.py": [98]}}
+,"23": {"9": {"pipelines/images.py": [98]}}
+,"24": {"9": {"pipelines/images.py": [98]}}
+,"25": {"9": {"pipelines/images.py": [98]}}
+,"26": {"9": {"pipelines/images.py": [98]}}
+,"27": {"9": {"pipelines/images.py": [98]}}
+,"29": {"9": {"pipelines/images.py": [98]}}
+,"28": {"9": {"pipelines/images.py": [98]}}
+,"30": {"9": {"pipelines/images.py": [98]}}
+,"31": {"9": {"pipelines/images.py": [98]}}
+,"32": {"9": {"pipelines/images.py": [98]}}
+,"33": {"9": {"pipelines/images.py": [98]}}
+,"34": {"9": {"pipelines/images.py": [98]}}
+,"36": {"9": {"pipelines/images.py": [97]}}
+,"35": {"9": {"pipelines/images.py": [97]}}
+,"37": {"9": {"pipelines/images.py": [97]}}
+,"38": {"9": {"pipelines/images.py": [97]}}
+,"39": {"9": {"pipelines/images.py": [97]}}
+,"65aa9ccc704cfde74dd1169ef0f963ade16a4d5e": "failed"
+}
+,
+{
+"bug": {"10": {"spiders/__init__.py": [69, 70, 73]}}
+,"11": {"10": {"spiders/__init__.py": [73]}}
+,"12": {"10": {"spiders/__init__.py": [73]}}
+,"13": {"10": {"spiders/__init__.py": [73]}}
+,"14": {"10": {"spiders/__init__.py": [73]}}
+,"15": {"10": {"spiders/__init__.py": [73]}}
+,"16": {"10": {"spiders/__init__.py": [73]}}
+,"17": {"10": {"spiders/__init__.py": [73]}}
+,"18": {"10": {"spiders/__init__.py": [73]}}
+,"19": {"10": {"spiders/__init__.py": [73]}}
+,"20": {"10": {"spiders/__init__.py": [73]}}
+,"21": {"10": {"spiders/__init__.py": [73]}}
+,"22": {"10": {"spiders/__init__.py": [73]}}
+,"23": {"10": {"spiders/__init__.py": [73]}}
+,"24": {"10": {"spiders/__init__.py": [73]}}
+,"25": {"10": {"spiders/__init__.py": [73]}}
+,"26": {"10": {"spiders/__init__.py": [73]}}
+,"27": {"10": {"spiders/__init__.py": [73]}}
+,"29": {"10": {"spiders/__init__.py": [73]}}
+,"28": {"10": {"spiders/__init__.py": [73]}}
+,"30": {"10": {"spiders/__init__.py": [73]}}
+,"31": {"10": {"spiders/__init__.py": [73]}}
+,"32": {"10": {"spiders/__init__.py": [73]}}
+,"33": {"10": {"spiders/__init__.py": [73]}}
+,"34": {"10": {"spiders/__init__.py": [73]}}
+,"36": {"10": {"spiders/__init__.py": [73]}}
+,"35": {"10": {"spiders/__init__.py": [73]}}
+,"9d1cf230ed1579dc187cd66e6619494f53475308": "failed"
+}
+,
+{
+"bug": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [9, 11, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133], "http/response/text.py": [11, 14, 15, 16, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174]}}
+,"12": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 104, 105, 118, 119], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"13": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 104, 105, 118, 119], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"14": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"15": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"16": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"17": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"18": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"19": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"20": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"21": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"22": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"23": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"24": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"25": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"26": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 119, 120, 121, 122, 131, 133, 134, 155, 156, 157, 158, 169]}}
+,"27": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"29": {"11": {"http/request/form.py": [8, 9, 11, 54], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"28": {"11": {"http/request/form.py": [8, 9, 11, 48], "http/response/__init__.py": [11, 84, 85, 98, 99], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"30": {"11": {"http/request/form.py": [8, 9, 11, 47], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"31": {"11": {"http/request/form.py": [8, 9, 11, 47], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"32": {"11": {"http/request/form.py": [8, 9, 11, 47], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"33": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"34": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"36": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"35": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [10, 83, 84, 97, 98], "http/response/text.py": [15, 114, 115, 116, 117, 126, 128, 129, 150, 151, 152, 153, 164]}}
+,"37": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [13, 85, 86, 99, 100], "http/response/text.py": [14, 113, 114, 115, 116, 125, 127, 128, 149, 150, 151, 152, 163]}}
+,"38": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [13, 85, 86, 99, 100], "http/response/text.py": [14, 113, 114, 115, 116, 125, 127, 128, 149, 150, 151, 152, 163]}}
+,"39": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [13, 85, 86, 99, 100], "http/response/text.py": [14, 113, 114, 115, 116, 125, 127, 128, 149, 150, 151, 152, 163]}}
+,"40": {"11": {"http/request/form.py": [8, 9, 10, 46], "http/response/__init__.py": [13, 85, 86, 99, 100], "http/response/text.py": [14, 113, 114, 115, 116, 125, 127, 128, 149, 150, 151, 152, 163]}}
+}
+,
+{
+"bug": {"12": {"item.py": [28, 42]}}
+,"13": {"12": {"item.py": [28, 42]}}
+,"14": {"12": {"item.py": [28, 42]}}
+,"15": {"12": {"item.py": [28, 42]}}
+,"16": {"12": {"item.py": [28, 42]}}
+,"17": {"12": {"item.py": [28, 42]}}
+,"18": {"12": {"item.py": [28, 42]}}
+,"19": {"12": {"item.py": [28, 42]}}
+,"20": {"12": {"item.py": [28, 42]}}
+,"21": {"12": {"item.py": [28, 42]}}
+,"22": {"12": {"item.py": [28, 42]}}
+,"23": {"12": {"item.py": [28, 42]}}
+,"24": {"12": {"item.py": [28, 42]}}
+,"25": {"12": {"item.py": [28, 42]}}
+,"26": {"12": {"item.py": [28, 42]}}
+,"27": {"12": {"item.py": [28, 42]}}
+,"29": {"12": {"item.py": [28, 42]}}
+,"28": {"12": {"item.py": [28, 42]}}
+,"30": {"12": {"item.py": [28, 42]}}
+,"31": {"12": {"item.py": [28, 42]}}
+,"32": {"12": {"item.py": [28, 42]}}
+,"33": {"12": {"item.py": [28, 42]}}
+,"34": {"12": {"item.py": [28, 42]}}
+,"36": {"12": {"item.py": [28, 42]}}
+,"35": {"12": {"item.py": [28, 42]}}
+,"37": {"12": {"item.py": [28, 42]}}
+,"38": {"12": {"item.py": [28, 42]}}
+,"39": {"12": {"item.py": [27, 41]}}
+,"40": {"12": {"item.py": [37]}}
+}
+,
+{
+"bug": {"13": {"mail.py": [24, 51]}}
+,"14": {"13": {"mail.py": [24, 51]}}
+,"15": {"13": {"mail.py": [24, 51]}}
+,"16": {"13": {"mail.py": [24, 51]}}
+,"17": {"13": {"mail.py": [24, 51]}}
+,"18": {"13": {"mail.py": [24, 51]}}
+,"19": {"13": {"mail.py": [24, 51]}}
+,"20": {"13": {"mail.py": [24, 51]}}
+,"21": {"13": {"mail.py": [24, 51]}}
+,"22": {"13": {"mail.py": [24, 51]}}
+,"23": {"13": {"mail.py": [24, 51]}}
+,"24": {"13": {"mail.py": [24, 51]}}
+,"25": {"13": {"mail.py": [24, 51]}}
+,"26": {"13": {"mail.py": [24, 51]}}
+,"27": {"13": {"mail.py": [24, 51]}}
+,"29": {"13": {"mail.py": [24, 51]}}
+,"28": {"13": {"mail.py": [24, 51]}}
+,"30": {"13": {"mail.py": [24, 51]}}
+,"31": {"13": {"mail.py": [24, 51]}}
+,"32": {"13": {"mail.py": [24, 51]}}
+,"33": {"13": {"mail.py": [24, 51]}}
+,"34": {"13": {"mail.py": [24, 51]}}
+,"36": {"13": {"mail.py": [24, 51]}}
+,"35": {"13": {"mail.py": [25, 52]}}
+,"37": {"13": {"mail.py": [25, 52]}}
+,"38": {"13": {"mail.py": [25, 52]}}
+,"39": {"13": {"mail.py": [25, 52]}}
+,"40": {"13": {"mail.py": [49]}}
+}
+,
+{
+"bug": {"14": {"commands/startproject.py": [20], "downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"15": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"16": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"17": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"18": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"19": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"20": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"21": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"22": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"23": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"24": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"25": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"26": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"27": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"29": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"28": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"30": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"31": {"14": {"downloadermiddlewares/redirect.py": [4, 6, 68, 69]}}
+,"32": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"33": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"34": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"36": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"35": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"37": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"38": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"39": {"14": {"downloadermiddlewares/redirect.py": [4]}}
+,"65aa9ccc704cfde74dd1169ef0f963ade16a4d5e": "failed"
+}
+,
+{
+"bug": {"15": {"utils/gz.py": [46]}}
+,"9a734e675907ea4d256c03a5d22740d2a43dcf61": "failed"
+}
+,
+{
+"bug": {"16": {"pipelines/images.py": [45]}}
+,"2c9a38d1f54a12c33d7c9a19e021c840c4a32dee": "failed"
+}
+,
+{
+"bug": {"17": {"commands/genspider.py": [28, 97, 98, 102, 103, 104], "commands/startproject.py": [3, 6, 30, 46, 47, 54, 55, 57, 58, 63, 64, 67, 73, 75, 83], "core/downloader/contextfactory.py": [9, 10, 14, 52], "core/downloader/handlers/http11.py": [96, 118, 124, 125, 129, 130, 151, 153, 155, 157, 158, 159, 160, 161, 196, 329], "core/downloader/tls.py": [1, 4, 17], "core/scheduler.py": [33, 87, 89, 90, 92], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 38, 87, 91, 99, 103, 106, 114, 123, 172, 173, 174, 203, 266], "extensions/feedexport.py": [165, 188], "http/request/__init__.py": [11, 53, 54], "pipelines/files.py": [6, 217, 222, 229, 231, 232, 233], "pipelines/images.py": [6, 41, 42, 43, 47, 48, 49, 50, 51, 52, 59], "pipelines/media.py": [30], "settings/default_settings.py": [96, 97, 98, 142, 163, 164, 165, 182, 183, 184, 185, 186, 187, 203], "settings/deprecated.py": [17], "utils/gz.py": [10, 53, 57], "utils/misc.py": [1], "utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"18": {"17": {"commands/genspider.py": [106, 107, 108], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 75, 90], "core/downloader/contextfactory.py": [99, 131], "core/downloader/handlers/http11.py": [143, 144, 187, 189, 191, 194, 195, 196, 197, 217, 350], "core/scheduler.py": [92], "downloadermiddlewares/httpcompression.py": [26], "downloadermiddlewares/retry.py": [25, 36], "exporters.py": [36, 39, 87, 91, 99, 106, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [165, 188], "pipelines/files.py": [217, 222, 235, 236, 237], "pipelines/images.py": [57, 58, 60, 61, 62], "pipelines/media.py": [30], "settings/default_settings.py": [142, 168, 203], "settings/deprecated.py": [17], "utils/gz.py": [53, 57], "utils/url.py": [13, 21, 66, 71, 72, 77, 78, 80, 81, 96, 97, 98, 130, 131, 132, 135, 138, 144, 164]}}
+,"19": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 75, 90], "core/downloader/contextfactory.py": [99, 131], "core/downloader/handlers/http11.py": [137, 138, 183, 185, 187, 190, 191, 192, 193, 213], "core/scheduler.py": [92], "downloadermiddlewares/httpcompression.py": [26], "downloadermiddlewares/retry.py": [25, 36], "exporters.py": [36, 39, 87, 91, 99, 106, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [165, 188], "pipelines/files.py": [217, 222, 235, 236, 237], "pipelines/images.py": [57, 58, 60, 61, 62], "pipelines/media.py": [30], "settings/default_settings.py": [142, 168, 203], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [13, 21, 59, 64, 65, 70, 71, 73, 74, 89, 90, 91, 123, 124, 125, 128, 131, 137, 157]}}
+,"20": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [99, 131], "core/downloader/handlers/http11.py": [137, 138, 183, 185, 187, 190, 191, 192, 193, 213], "core/scheduler.py": [92], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [165, 188], "pipelines/files.py": [217, 222, 235, 236, 237], "pipelines/images.py": [57, 58, 60, 61, 62], "pipelines/media.py": [30], "settings/default_settings.py": [142, 168, 203], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"21": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [94, 126], "core/downloader/handlers/http11.py": [129, 174, 176, 178, 181, 182, 183, 184, 196], "core/scheduler.py": [92], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [161, 184], "pipelines/files.py": [217, 224, 229, 230, 231], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [141, 164, 192], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"22": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [161, 184], "pipelines/files.py": [182, 189, 194, 195, 196], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 188], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"23": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [151, 174], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 188], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"24": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 188], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"25": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 172, 173, 175, 210, 266], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 188], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"26": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 170, 171, 173, 208, 264], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 188], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [12, 18, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 68, 69, 75, 84]}}
+,"27": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [36, 39, 87, 91, 99, 114, 123, 170, 172, 173, 208, 264], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 188], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [11, 17, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 67, 68, 74, 83]}}
+,"29": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [119, 141, 143, 145, 148, 149, 150, 151, 163], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [139, 160, 186], "settings/deprecated.py": [17], "utils/gz.py": [53], "utils/url.py": [11, 17, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 67, 68, 74, 83]}}
+,"28": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [3, 30, 49, 54, 55, 57, 58, 63, 64, 67, 90], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [117, 139, 141, 143, 146, 147, 148, 149, 161], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [137, 158, 184], "settings/deprecated.py": [17], "utils/gz.py": [35], "utils/url.py": [11, 17, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 67, 68, 74, 83]}}
+,"30": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [4, 33, 52, 57, 58, 60, 61, 66, 67, 86], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [132, 151, 176], "settings/deprecated.py": [17], "utils/gz.py": [35], "utils/url.py": [11, 17, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 67, 68, 74, 83]}}
+,"31": {"17": {"commands/genspider.py": [102, 103, 104], "commands/startproject.py": [4, 33, 52, 57, 58, 60, 61, 66, 67, 86], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [24, 35], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [148, 171], "pipelines/files.py": [155, 162, 167, 168, 169], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [132, 151, 176], "settings/deprecated.py": [17], "utils/gz.py": [35], "utils/url.py": [11, 17, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 67, 68, 74, 83]}}
+,"32": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [154, 161, 166, 167, 168], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [137, 158, 184], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 18, 44, 45, 48, 49, 51, 52, 56, 57, 58, 67, 67, 74, 84]}}
+,"33": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [154, 161, 166, 167, 168], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [137, 158, 184], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 18, 44, 45, 48, 49, 51, 52, 56, 57, 58, 67, 67, 74, 84]}}
+,"34": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [154, 161, 166, 167, 168], "pipelines/images.py": [52, 57, 58, 59], "pipelines/media.py": [30], "settings/default_settings.py": [137, 158, 184], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 18, 44, 45, 48, 49, 51, 52, 56, 57, 58, 67, 67, 74, 84]}}
+,"36": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [153, 160, 165, 166, 167], "pipelines/images.py": [51, 56, 57, 58], "pipelines/media.py": [30], "settings/default_settings.py": [137, 158, 184], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 18, 44, 45, 48, 49, 51, 52, 56, 57, 58, 67, 67, 74, 84]}}
+,"35": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [153, 160, 165, 166, 167], "pipelines/images.py": [51, 56, 57, 58], "pipelines/media.py": [30], "settings/default_settings.py": [137, 158, 184], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 18, 44, 45, 48, 49, 51, 52, 56, 57, 58, 67, 67, 74, 84]}}
+,"37": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [149, 156, 161, 162, 163], "pipelines/images.py": [51, 56, 57, 58], "pipelines/media.py": [30], "settings/default_settings.py": [131, 152, 176], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 16, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 61, 68, 77]}}
+,"38": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [148, 155, 160, 161, 162], "pipelines/images.py": [51, 56, 57, 58], "pipelines/media.py": [29], "settings/default_settings.py": [131, 152, 176], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 16, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 61, 68, 77]}}
+,"39": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [116, 138, 140, 142, 145, 146, 147, 148, 160], "core/scheduler.py": [89], "downloadermiddlewares/httpcompression.py": [23], "downloadermiddlewares/retry.py": [30, 41], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "extensions/feedexport.py": [147, 170], "pipelines/files.py": [148, 155, 160, 161, 162], "pipelines/images.py": [51, 56, 57, 58], "pipelines/media.py": [29], "settings/default_settings.py": [131, 152, 176], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 16, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 61, 68, 77]}}
+,"40": {"17": {"commands/genspider.py": [99, 100, 101], "commands/startproject.py": [4, 32, 51, 56, 57, 59, 60, 65, 66, 85], "core/downloader/contextfactory.py": [79, 56], "core/downloader/handlers/http11.py": [114, 136, 138, 140, 143, 144, 145, 146, 158], "core/scheduler.py": [86], "exporters.py": [31, 34, 85, 97, 121, 168, 169, 170, 194, 242], "settings/default_settings.py": [132, 152, 174], "settings/deprecated.py": [17], "utils/gz.py": [34], "utils/url.py": [11, 16, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 61, 68, 77]}}
+}
+,
+{
+"bug": {"18": {"utils/gz.py": [10, 53, 57]}}
+,"19": {"18": {"utils/gz.py": [53]}}
+,"20": {"18": {"utils/gz.py": [53]}}
+,"21": {"18": {"utils/gz.py": [53]}}
+,"22": {"18": {"utils/gz.py": [53]}}
+,"23": {"18": {"utils/gz.py": [53]}}
+,"24": {"18": {"utils/gz.py": [53]}}
+,"25": {"18": {"utils/gz.py": [53]}}
+,"26": {"18": {"utils/gz.py": [53]}}
+,"27": {"18": {"utils/gz.py": [53]}}
+,"29": {"18": {"utils/gz.py": [53]}}
+,"28": {"18": {"utils/gz.py": [35]}}
+,"30": {"18": {"utils/gz.py": [35]}}
+,"31": {"18": {"utils/gz.py": [35]}}
+,"32": {"18": {"utils/gz.py": [34]}}
+,"33": {"18": {"utils/gz.py": [34]}}
+,"34": {"18": {"utils/gz.py": [34]}}
+,"36": {"18": {"utils/gz.py": [34]}}
+,"35": {"18": {"utils/gz.py": [34]}}
+,"37": {"18": {"utils/gz.py": [34]}}
+,"38": {"18": {"utils/gz.py": [34]}}
+,"39": {"18": {"utils/gz.py": [34]}}
+,"40": {"18": {"utils/gz.py": [34]}}
+}
+,
+{
+"bug": {"19": {"utils/url.py": [44, 46]}}
+,"20": {"19": {"utils/url.py": [41, 43]}}
+,"21": {"19": {"utils/url.py": [41, 43]}}
+,"22": {"19": {"utils/url.py": [41, 43]}}
+,"23": {"19": {"utils/url.py": [41, 43]}}
+,"24": {"19": {"utils/url.py": [41, 43]}}
+,"25": {"19": {"utils/url.py": [41, 43]}}
+,"26": {"19": {"utils/url.py": [41, 43]}}
+,"27": {"19": {"utils/url.py": [40, 42]}}
+,"29": {"19": {"utils/url.py": [40, 42]}}
+,"28": {"19": {"utils/url.py": [40, 42]}}
+,"30": {"19": {"utils/url.py": [40, 42]}}
+,"31": {"19": {"utils/url.py": [40, 42]}}
+,"32": {"19": {"utils/url.py": [40, 42]}}
+,"33": {"19": {"utils/url.py": [40, 42]}}
+,"34": {"19": {"utils/url.py": [40, 42]}}
+,"36": {"19": {"utils/url.py": [40, 42]}}
+,"35": {"19": {"utils/url.py": [40, 42]}}
+,"37": {"19": {"utils/url.py": [39, 41]}}
+,"38": {"19": {"utils/url.py": [39, 41]}}
+,"39": {"19": {"utils/url.py": [39, 41]}}
+,"40": {"19": {"utils/url.py": [39, 41]}}
+}
+,
+{
+"bug": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"21": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"22": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"23": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"24": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"25": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"26": {"20": {"utils/url.py": [10, 12, 18, 40, 45, 46, 49, 50, 52, 53, 57, 58, 59, 63, 64, 65, 67, 69, 75, 84]}}
+,"27": {"20": {"utils/url.py": [9, 11, 17, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 63, 64, 66, 68, 74, 83]}}
+,"29": {"20": {"utils/url.py": [9, 11, 17, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 63, 64, 66, 68, 74, 83]}}
+,"28": {"20": {"utils/url.py": [9, 11, 17, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 63, 64, 66, 68, 74, 83]}}
+,"30": {"20": {"utils/url.py": [9, 11, 17, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 63, 64, 66, 68, 74, 83]}}
+,"31": {"20": {"utils/url.py": [9, 11, 17, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 63, 64, 66, 68, 74, 83]}}
+,"32": {"20": {"utils/url.py": [9, 11, 18, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 66, 74, 84]}}
+,"33": {"20": {"utils/url.py": [9, 11, 18, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 66, 74, 84]}}
+,"34": {"20": {"utils/url.py": [9, 11, 18, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 66, 74, 84]}}
+,"36": {"20": {"utils/url.py": [9, 11, 18, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 66, 74, 84]}}
+,"35": {"20": {"utils/url.py": [9, 11, 18, 39, 44, 45, 48, 49, 51, 52, 56, 57, 58, 62, 66, 74, 84]}}
+,"37": {"20": {"utils/url.py": [9, 11, 16, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 60, 68, 77]}}
+,"38": {"20": {"utils/url.py": [9, 11, 16, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 60, 68, 77]}}
+,"39": {"20": {"utils/url.py": [9, 11, 16, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 60, 68, 77]}}
+,"40": {"20": {"utils/url.py": [9, 11, 16, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 61, 60, 68, 77]}}
+}
+,
+{
+"bug": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"22": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"23": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"24": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"25": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"26": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"27": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"29": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"28": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"30": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"31": {"21": {"utils/response.py": [50, 51, 52, 53, 54, 55, 57]}}
+,"32": {"21": {"utils/response.py": [51, 52, 53, 54, 55, 56, 58]}}
+,"33": {"21": {"utils/response.py": [51, 52, 53, 54, 55, 56, 58]}}
+,"34": {"21": {"utils/response.py": [51, 52, 53, 54, 55, 56, 58]}}
+,"36": {"21": {"utils/response.py": [51, 52, 53, 54, 55, 56, 58]}}
+,"35": {"21": {"utils/response.py": [51, 52, 53, 54, 55, 56, 58]}}
+,"37": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54, 56]}}
+,"38": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54, 56]}}
+,"39": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54, 56]}}
+,"40": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54, 56]}}
+}
+,
+{
+"bug": {"22": {"core/downloader/handlers/s3.py": [5, 9, 10, 38, 46, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 70, 78, 79, 80, 81, 82, 84, 85, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], "extensions/feedexport.py": [27, 94, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 112, 113, 114, 115, 116, 117, 118, 119, 120], "http/headers.py": [4, 82, 83, 84, 85, 86, 87], "pipelines/files.py": [31, 90, 91, 92, 93, 94, 95, 96, 97, 100, 105, 106, 107, 108, 109, 110, 111, 112, 113, 125, 126, 127, 128, 129, 130, 131, 132, 133, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158], "responsetypes.py": [62], "utils/test.py": [5, 11, 12, 13, 19, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]}}
+,"23": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 58, 75, 60, 61, 62, 63, 64, 65, 60, 68, 72, 70, 71, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86], "extensions/feedexport.py": [109, 110, 111, 109, 110, 111], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"24": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 58, 75, 60, 61, 62, 63, 64, 65, 60, 68, 72, 70, 71, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"25": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 58, 75, 60, 61, 62, 63, 64, 65, 60, 68, 72, 70, 71, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"26": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 58, 75, 60, 61, 62, 63, 64, 65, 60, 68, 72, 70, 71, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"27": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 58, 75, 60, 61, 62, 63, 64, 65, 60, 68, 72, 70, 71, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"29": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 58, 75, 60, 61, 62, 63, 64, 65, 60, 68, 72, 70, 71, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"28": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"30": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 34]}}
+,"31": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [106, 107, 108, 106, 107, 108], "http/headers.py": [81], "pipelines/files.py": [89, 99, 100, 101, 102, 103, 104, 115, 116, 117, 118, 119, 120, 121, 122, 123, 121, 134, 135, 136, 137, 138], "responsetypes.py": [62], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"32": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [98, 99, 100, 101, 102, 103, 114, 115, 116, 117, 118, 119, 120, 121, 122, 120, 133, 134, 135, 136, 137], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"33": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [98, 99, 100, 101, 102, 103, 114, 115, 116, 117, 118, 119, 120, 121, 122, 120, 133, 134, 135, 136, 137], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"34": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [98, 99, 100, 101, 102, 103, 114, 115, 116, 117, 118, 119, 120, 121, 122, 120, 133, 134, 135, 136, 137], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"36": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [97, 98, 99, 100, 101, 102, 113, 114, 115, 116, 117, 118, 119, 120, 121, 119, 132, 133, 134, 135, 136], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"35": {"22": {"core/downloader/handlers/s3.py": [5, 9, 44, 51, 68, 53, 54, 55, 56, 57, 58, 53, 61, 65, 63, 64, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [97, 98, 99, 100, 101, 102, 113, 114, 115, 116, 117, 118, 119, 120, 121, 119, 132, 133, 134, 135, 136], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"37": {"22": {"core/downloader/handlers/s3.py": [6, 14, 39, 46, 63, 48, 49, 50, 51, 52, 53, 48, 56, 60, 58, 59, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [92, 93, 96, 97, 109, 110, 111, 112, 113, 114, 115, 116, 117, 115, 128, 129, 130, 131, 132], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"38": {"22": {"core/downloader/handlers/s3.py": [6, 14, 39, 46, 63, 48, 49, 50, 51, 52, 53, 48, 56, 60, 58, 59, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [91, 92, 95, 96, 108, 109, 110, 111, 112, 113, 114, 115, 116, 114, 127, 128, 129, 130, 131], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"39": {"22": {"core/downloader/handlers/s3.py": [6, 14, 39, 46, 63, 48, 49, 50, 51, 52, 53, 48, 56, 60, 58, 59, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74], "extensions/feedexport.py": [105, 106, 107, 105, 106, 107], "http/headers.py": [81], "pipelines/files.py": [91, 92, 95, 96, 108, 109, 110, 111, 112, 113, 114, 115, 116, 114, 127, 128, 129, 130, 131], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+,"40": {"22": {"core/downloader/handlers/s3.py": [6, 14, 39, 46, 63, 48, 49, 50, 51, 52, 53, 48, 56, 60, 58, 59, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74], "http/headers.py": [81], "utils/test.py": [12, 15, 24, 25, 26, 35]}}
+}
+,
+{
+"bug": {"23": {"extensions/feedexport.py": [13, 61, 62, 63], "http/cookies.py": [140, 145, 146]}}
+,"24": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"25": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"26": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"27": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"29": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"28": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"30": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"31": {"23": {"extensions/feedexport.py": [60], "http/cookies.py": [140, 145, 146]}}
+,"32": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [140, 145, 146]}}
+,"33": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [140, 145, 146]}}
+,"34": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [140, 145, 146]}}
+,"36": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [140, 145, 146]}}
+,"35": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [136, 136, 137]}}
+,"37": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [136, 136, 137]}}
+,"38": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [136, 136, 137]}}
+,"39": {"23": {"extensions/feedexport.py": [59], "http/cookies.py": [136, 136, 137]}}
+,"40": {"23": {"http/cookies.py": [136, 136, 137]}}
+}
+,
+{
+"bug": {"24": {"spiders/sitemap.py": [35]}}
+,"25": {"24": {"spiders/sitemap.py": [35]}}
+,"26": {"24": {"spiders/sitemap.py": [35]}}
+,"27": {"24": {"spiders/sitemap.py": [35]}}
+,"29": {"24": {"spiders/sitemap.py": [35]}}
+,"28": {"24": {"spiders/sitemap.py": [35]}}
+,"30": {"24": {"spiders/sitemap.py": [35]}}
+,"31": {"24": {"spiders/sitemap.py": [35]}}
+,"32": {"24": {"spiders/sitemap.py": [33]}}
+,"33": {"24": {"spiders/sitemap.py": [33]}}
+,"34": {"24": {"spiders/sitemap.py": [33]}}
+,"36": {"24": {"spiders/sitemap.py": [33]}}
+,"35": {"24": {"spiders/sitemap.py": [33]}}
+,"37": {"24": {"spiders/sitemap.py": [33]}}
+,"38": {"24": {"spiders/sitemap.py": [33]}}
+,"39": {"24": {"spiders/sitemap.py": [33]}}
+,"65aa9ccc704cfde74dd1169ef0f963ade16a4d5e": "failed"
+}
+,
+{
+"bug": {"25": {"commands/settings.py": [2, 3, 31], "downloadermiddlewares/robotstxt.py": [104], "settings/__init__.py": [7, 371, 372, 374, 375]}}
+,"26": {"25": {"commands/settings.py": [2, 3, 31], "downloadermiddlewares/robotstxt.py": [104], "settings/__init__.py": [7, 372, 379]}}
+,"27": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 379]}}
+,"29": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 379]}}
+,"28": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 379]}}
+,"30": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 392]}}
+,"31": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 386]}}
+,"32": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 130]}}
+,"33": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 130]}}
+,"34": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 130]}}
+,"36": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 130]}}
+,"35": {"25": {"commands/settings.py": [2, 3, 31], "settings/__init__.py": [7, 130]}}
+,"37": {"25": {"commands/settings.py": [3, 31], "settings/__init__.py": [7, 130]}}
+,"38": {"25": {"commands/settings.py": [3, 31], "settings/__init__.py": [7, 130]}}
+,"39": {"25": {"commands/settings.py": [3, 31], "settings/__init__.py": [7, 130]}}
+,"40": {"25": {"commands/settings.py": [3, 31], "settings/__init__.py": [7, 130]}}
+}
+,
+{
+"bug": {"26": {"core/downloader/__init__.py": [197], "exporters.py": [147, 148]}}
+,"27": {"26": {"exporters.py": [147, 148]}}
+,"29": {"26": {"exporters.py": [145, 146]}}
+,"28": {"26": {"exporters.py": [145, 146]}}
+,"30": {"26": {"exporters.py": [145, 146]}}
+,"31": {"26": {"exporters.py": [145, 146]}}
+,"32": {"26": {"exporters.py": [145, 146]}}
+,"33": {"26": {"exporters.py": [145, 146]}}
+,"34": {"26": {"exporters.py": [145, 146]}}
+,"36": {"26": {"exporters.py": [145, 146]}}
+,"35": {"26": {"exporters.py": [145, 146]}}
+,"37": {"26": {"exporters.py": [145, 146]}}
+,"38": {"26": {"exporters.py": [145, 146]}}
+,"39": {"26": {"exporters.py": [145, 146]}}
+,"40": {"26": {"exporters.py": [145, 146]}}
+}
+,
+{
+"bug": {"27": {"downloadermiddlewares/ajaxcrawl.py": [66], "downloadermiddlewares/robotstxt.py": [11, 13, 62, 63, 64, 65, 66, 67, 68, 94, 95], "exporters.py": [276, 277, 278, 279], "http/request/form.py": [67, 68], "http/response/text.py": [70], "selector/unified.py": [63], "utils/iterators.py": [140], "utils/response.py": [28, 40]}}
+,"29": {"27": {"downloadermiddlewares/robotstxt.py": [12, 60, 61], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"28": {"27": {"downloadermiddlewares/robotstxt.py": [12, 60, 61], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"30": {"27": {"downloadermiddlewares/robotstxt.py": [12, 60, 61], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"31": {"27": {"downloadermiddlewares/robotstxt.py": [12, 60, 61], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"32": {"27": {"downloadermiddlewares/robotstxt.py": [11, 54, 55], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"33": {"27": {"downloadermiddlewares/robotstxt.py": [11, 54, 55], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"34": {"27": {"downloadermiddlewares/robotstxt.py": [11, 54, 55], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"36": {"27": {"downloadermiddlewares/robotstxt.py": [11, 54, 55], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"35": {"27": {"downloadermiddlewares/robotstxt.py": [11, 54, 55], "exporters.py": [254, 256, 257], "http/response/text.py": [70]}}
+,"37": {"27": {"downloadermiddlewares/robotstxt.py": [11, 54, 55], "exporters.py": [254, 256, 257], "http/response/text.py": [69]}}
+,"38": {"27": {"downloadermiddlewares/robotstxt.py": [11, 53, 54], "exporters.py": [254, 256, 257], "http/response/text.py": [69]}}
+,"39": {"27": {"downloadermiddlewares/robotstxt.py": [11, 53, 54], "exporters.py": [254, 256, 257], "http/response/text.py": [69]}}
+,"40": {"27": {"exporters.py": [254, 256, 257], "http/response/text.py": [69]}}
+}
+,
+{
+"bug": {"28": {"core/downloader/handlers/http11.py": [81, 95, 96, 98, 99]}}
+,"30": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"31": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"32": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"33": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"34": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"36": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"35": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"37": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"38": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"39": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
+,"40": {"28": {"core/downloader/handlers/http11.py": [78, 92, 93, 95, 96]}}
+}
+,
+{
+"bug": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"28": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"30": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"31": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"32": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"33": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"34": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"36": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"35": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"37": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"38": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"39": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
+,"65aa9ccc704cfde74dd1169ef0f963ade16a4d5e": "failed"
+}
+,
+{
+"bug": {"30": {"crawler.py": [32, 45, 46, 68, 69, 70, 71], "http/request/form.py": [14, 47, 61]}}
+,"31": {"30": {"crawler.py": [33, 47, 49, 71, 72, 73, 74], "http/request/form.py": [14, 47, 61]}}
+,"32": {"30": {"crawler.py": [33, 47, 49, 71, 72, 73, 74], "http/request/form.py": [14, 47, 61]}}
+,"33": {"30": {"crawler.py": [33, 47, 49, 71, 72, 73, 74], "http/request/form.py": [13, 46, 60]}}
+,"34": {"30": {"crawler.py": [33, 47, 49, 71, 72, 73, 74], "http/request/form.py": [13, 46, 61]}}
+,"36": {"30": {"crawler.py": [33, 47, 49, 71, 72, 73, 74], "http/request/form.py": [13, 46, 61]}}
+,"35": {"30": {"crawler.py": [33, 47, 49, 71, 72, 73, 74], "http/request/form.py": [13, 46, 61]}}
+,"37": {"30": {"crawler.py": [32, 46, 50, 72, 73, 74, 75], "http/request/form.py": [13, 46, 61]}}
+,"38": {"30": {"crawler.py": [32, 44, 48, 70, 71, 72, 73], "http/request/form.py": [13, 46, 61]}}
+,"39": {"30": {"crawler.py": [32, 44, 48, 70, 71, 72, 73], "http/request/form.py": [13, 46, 61]}}
+,"40": {"30": {"crawler.py": [28, 34, 38, 60, 61, 62, 63], "http/request/form.py": [13, 46, 61]}}
+}
+,
+{
+"bug": {"31": {"settings/__init__.py": [119, 121, 206, 207, 209, 210]}}
+,"32": {"31": {"settings/__init__.py": [69, 71, 99, 100, 102]}}
+,"33": {"31": {"settings/__init__.py": [69, 71, 99, 100, 102]}}
+,"34": {"31": {"settings/__init__.py": [69, 71, 99, 100, 102]}}
+,"36": {"31": {"settings/__init__.py": [69, 71, 99, 100, 102]}}
+,"35": {"31": {"settings/__init__.py": [69, 71, 99, 100, 102]}}
+,"37": {"31": {"settings/__init__.py": [69, 71, 99, 100, 104]}}
+,"38": {"31": {"settings/__init__.py": [69, 71, 99, 100, 104]}}
+,"39": {"31": {"settings/__init__.py": [69, 71, 99, 100, 104]}}
+,"40": {"31": {"settings/__init__.py": [69, 71, 99, 100, 104]}}
+}
+,
+{
+"bug": {"32": {"downloadermiddlewares/redirect.py": [58], "shell.py": [8, 25, 26, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 131, 134, 135, 136, 137, 138, 141, 142, 143, 145, 146, 147, 149, 173], "utils/console.py": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 75, 76, 77]}}
+,"33": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"34": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"36": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"35": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"37": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"38": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"39": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+,"40": {"32": {"shell.py": [24, 55, 56, 57, 75, 106, 109, 116, 144], "utils/console.py": [3]}}
+}
+,
+{
+"bug": {"33": {"dupefilters.py": [39]}}
+,"34": {"33": {"dupefilters.py": [39]}}
+,"36": {"33": {"dupefilters.py": [39]}}
+,"35": {"33": {"dupefilters.py": [39]}}
+,"9d1cf230ed1579dc187cd66e6619494f53475308": "failed"
+}
+,
+{
+"bug": {"34": {"utils/request.py": [82]}}
+,"36": {"34": {"utils/request.py": [82]}}
+,"35": {"34": {"utils/request.py": [82]}}
+,"37": {"34": {"utils/request.py": [78]}}
+,"38": {"34": {"utils/request.py": [78]}}
+,"39": {"34": {"utils/request.py": [78]}}
+,"40": {"34": {"utils/request.py": [78]}}
+}
+,
+{
+"bug": {"35": {"__init__.py": [34], "core/downloader/handlers/s3.py": [3, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 39, 40, 41], "downloadermiddlewares/redirect.py": [57, 58], "http/cookies.py": [2, 4, 100, 136, 143, 146, 150, 161, 162], "pipelines/files.py": [87, 88, 89, 90, 91, 106, 108]}}
+,"37": {"35": {"__init__.py": [41], "core/downloader/handlers/s3.py": [4, 13, 18, 34, 35, 36, 37, 36, 37, 38], "http/cookies.py": [4, 100, 136, 143, 146, 161, 162], "pipelines/files.py": [102, 104]}}
+,"38": {"35": {"__init__.py": [41], "core/downloader/handlers/s3.py": [4, 13, 18, 34, 35, 36, 37, 36, 37, 38], "http/cookies.py": [4, 100, 136, 143, 146, 161, 162], "pipelines/files.py": [101, 103]}}
+,"39": {"35": {"__init__.py": [41], "core/downloader/handlers/s3.py": [4, 13, 18, 34, 35, 36, 37, 36, 37, 38], "http/cookies.py": [4, 100, 136, 143, 146, 161, 162], "pipelines/files.py": [101, 103]}}
+,"40": {"35": {"__init__.py": [41], "core/downloader/handlers/s3.py": [4, 13, 18, 34, 35, 36, 37, 36, 37, 38], "http/cookies.py": [4, 100, 136, 143, 146, 161, 162]}}
+}
+,
+{
+"bug": {"36": {"cmdline.py": [21, 23, 24], "utils/testproc.py": [38, 39]}}
+,"35": {"36": {"cmdline.py": [21, 23, 24], "utils/testproc.py": [38, 39]}}
+,"af97c373eac5f6c137f632e2db844bde3abb2f49": "failed"
+}
+,
+{
+"bug": {"37": {"crawler.py": [212, 213]}}
+,"38": {"37": {"crawler.py": [211, 212]}}
+,"39": {"37": {"crawler.py": [211, 212]}}
+,"40": {"37": {"crawler.py": [142]}}
+}
+,
+{
+"bug": {"38": {"core/engine.py": [19, 138, 141, 144, 156, 271], "core/scraper.py": [13, 110, 156, 205, 230], "downloadermiddlewares/robotstxt.py": [14, 62], "extensions/feedexport.py": [25, 187], "log.py": [11, 51], "pipelines/files.py": [28, 215], "pipelines/media.py": [11, 73, 130], "utils/log.py": [3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 61, 62, 63, 64, 65, 69], "utils/signal.py": [11, 50]}}
+,"39": {"38": {"core/engine.py": [19, 138, 141, 144, 156, 271], "core/scraper.py": [13, 110, 156, 205, 230], "downloadermiddlewares/robotstxt.py": [14, 62], "extensions/feedexport.py": [25, 187], "log.py": [11, 51], "pipelines/files.py": [28, 215], "pipelines/media.py": [11, 73, 130], "utils/log.py": [3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 61, 62, 63, 64, 65, 69], "utils/signal.py": [11, 49]}}
+,"40": {"38": {"core/engine.py": [20, 134, 136, 149, 261], "core/scraper.py": [12, 107, 151, 199, 223], "log.py": [165, 191], "utils/signal.py": [9, 46]}}
+}
+,
+{
+"bug": {"39": {"item.py": [9, 30]}}
+,"40": {"39": {"item.py": [9, 27]}}
+}
+,
+{
+"bug": {"40": {"crawler.py": [195, 196]}}
+}
+]

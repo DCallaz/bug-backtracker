@@ -1,0 +1,2 @@
+--include pandas
+--exclude pandas/tests
