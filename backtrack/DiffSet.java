@@ -86,6 +86,10 @@ public class DiffSet extends BugFix {
         line = full[i.getAndIncrement()];
         if (line.startsWith("Binary")) {
           skip(i, full);
+        } else if (line.startsWith("diff")) {
+          i.getAndDecrement();
+          skip(i, full);
+          continue;
         } else {
           line = full[i.getAndIncrement()];
           if (!line.startsWith("+++")) {
