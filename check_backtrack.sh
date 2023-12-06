@@ -43,7 +43,12 @@ for ((bug=1; bug <= $num_bugs; bug++)); do
           else
             vline="$(git show "${shas[$version]}^:${srcs[0]}$filename" 2> "/tmp/err" | sed "${line}q;d")"
             if [[ "$(cat "/tmp/err")" =~ "fatal:"* ]]; then
-              vline="$(git show "${shas[$version]}^:${srcs[1]}$filename" | sed "${line}q;d")"
+              vline="$(git show "${shas[$version]}^:${srcs[1]}$filename" 2> "/tmp/err" | sed "${line}q;d")"
+              if [[ "$(cat "/tmp/err")" =~ "fatal:"* ]]; then
+                echo "${red}ERROR: Version $version does not contain $filename for bug $bug"
+                cd "$curr_dir"
+                continue 3
+              fi
             fi
             found=0
             for bline in "${bug_lines[@]}"; do
