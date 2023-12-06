@@ -3,9 +3,9 @@
 # start and end commit SHA's, this script will produce an all_shas SHAFILE and
 # a directory of relevant diffs.
 if [ "$1" ] && [ "$2" ]; then
-  shas=$(git log --format="%H" | awk "/$1/,/$2/")
+  shas=$(git log --topo-order --format="%H" | awk "/$1/,/$2/")
 else
-  shas=$(git log --format="%H")
+  shas=$(git log --topo-order --format="%H")
 fi
 #echo "$shas"
 #newer_shas=($shas)
