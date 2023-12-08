@@ -67,4 +67,13 @@ public class BugFix {
     }
     return "\"" + id + "\": " + collec;
   }
+
+  @Override
+  public BugFix clone() {
+    List<BugFile> new_collection = new ArrayList<BugFile>();
+    for (BugFile bf : this.collection) {
+      new_collection.add(bf.clone());
+    }
+    return new BugFix(this.sha, this.id, new_collection);
+  }
 }

@@ -78,6 +78,7 @@ public class BugFile {
     for (int index : toRemove) {
       lines.remove(index);
     }
+    //System.out.println(lines);
   }
 
   private static class IntPair {
@@ -100,5 +101,10 @@ public class BugFile {
   @Override
   public String toString() {
     return "\""+file + "\": " + lines;
+  }
+
+  @Override
+  public BugFile clone() {
+    return new BugFile(this.file, this.lines.stream().mapToInt(i -> i).toArray());
   }
 }
