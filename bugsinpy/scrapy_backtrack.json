@@ -59,7 +59,6 @@
 ,"38": {"3": {"utils/datatypes.py": [281, 282]}}
 ,"39": {"3": {"utils/datatypes.py": [281, 282]}}
 ,"40": {"3": {"utils/datatypes.py": [281, 282]}}
-,"c59340150f60209af63677349449746a6c0fdebf": "failed"
 }
 ,
 {
@@ -99,7 +98,6 @@
 ,"38": {"4": {"downloadermiddlewares/redirect.py": [2]}}
 ,"39": {"4": {"downloadermiddlewares/redirect.py": [2]}}
 ,"40": {"4": {"contrib/downloadermiddleware/redirect.py": [1]}}
-,"6f7efa1d1df5e1042fd654fe5aae74ab864b1c4d": "failed"
 }
 ,
 {
@@ -141,7 +139,6 @@
 ,"38": {"5": {"http/request/__init__.py": [58]}}
 ,"39": {"5": {"http/request/__init__.py": [58]}}
 ,"40": {"5": {"http/request/__init__.py": [58]}}
-,"c4a607fc787b2b1d61bf309c98dc9ced38d9d445": "failed"
 }
 ,
 {
@@ -180,7 +177,6 @@
 ,"38": {"6": {"contracts/__init__.py": [83]}}
 ,"39": {"6": {"contracts/__init__.py": [83]}}
 ,"40": {"6": {"contracts/__init__.py": [83]}}
-,"7130df2d96836467c33f87196699076f159df9f0": "failed"
 }
 ,
 {
@@ -236,7 +232,6 @@
 ,"38": {"11": {"http/request/form.py": [8, 9, 10]}}
 ,"39": {"11": {"http/request/form.py": [8, 9, 10]}}
 ,"40": {"11": {"http/request/form.py": [8, 9, 10]}}
-,"a11ef7fba704c68049516a323bcca69d6fc4d03b": "failed"
 }
 ,
 {
@@ -304,7 +299,6 @@
 ,"38": {"14": {"downloadermiddlewares/redirect.py": [4]}}
 ,"39": {"14": {"downloadermiddlewares/redirect.py": [4]}}
 ,"40": {"14": {"contrib/downloadermiddleware/redirect.py": [4]}}
-,"1330697c3dc9cc64189b0da9506767bbbe6d70f4": "failed"
 }
 ,
 {
@@ -354,7 +348,6 @@
 ,"38": {"20": {"utils/url.py": [9, 11, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 60, 62, 68]}}
 ,"39": {"20": {"utils/url.py": [9, 11, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 60, 62, 68]}}
 ,"40": {"20": {"utils/url.py": [9, 11, 38, 43, 44, 47, 48, 50, 51, 55, 56, 57, 60, 62, 68]}}
-,"30803b9e89427f70fae5e5d809ddc8940b33984a": "failed"
 }
 ,
 {
@@ -378,7 +371,6 @@
 ,"38": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54]}}
 ,"39": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54]}}
 ,"40": {"21": {"utils/response.py": [49, 50, 51, 52, 53, 54]}}
-,"7eaa3ed24dbd5ef3062017233ced2256f4d31e53": "failed"
 }
 ,
 {
@@ -419,7 +411,6 @@
 ,"38": {"23": {"http/cookies.py": [136, 137]}}
 ,"39": {"23": {"http/cookies.py": [136, 137]}}
 ,"40": {"23": {"http/cookies.py": [136, 137]}}
-,"5861b345c72c817a53148316fdc1dc351af5d186": "failed"
 }
 ,
 {
@@ -440,7 +431,6 @@
 ,"38": {"24": {"spiders/sitemap.py": [33]}}
 ,"39": {"24": {"spiders/sitemap.py": [33]}}
 ,"40": {"24": {"contrib/spiders/sitemap.py": [30]}}
-,"57c43fdce6809382b360e1dff61b1289d62ce679": "failed"
 }
 ,
 {
@@ -484,7 +474,6 @@
 ,"38": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
 ,"39": {"28": {"core/downloader/handlers/http11.py": [80, 94, 95, 97, 98]}}
 ,"40": {"28": {"core/downloader/handlers/http11.py": [78, 92, 93, 95, 96]}}
-,"7f053cc1d27d565c8a44f4135949087d3197e18f": "failed"
 }
 ,
 {
@@ -501,7 +490,6 @@
 ,"38": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
 ,"39": {"29": {"downloadermiddlewares/httpproxy.py": [12, 29, 55]}}
 ,"40": {"29": {"contrib/downloadermiddleware/httpproxy.py": [12, 29, 55]}}
-,"bc64ca3e1372e40b8b89bbacac23a18661cdcf15": "failed"
 }
 ,
 {
@@ -547,7 +535,6 @@
 ,"38": {"36": {"cmdline.py": [21, 23, 24], "utils/testproc.py": [38, 39]}}
 ,"39": {"36": {"cmdline.py": [21, 23, 24], "utils/testproc.py": [38, 39]}}
 ,"40": {"36": {"cmdline.py": [21, 23, 24], "utils/testproc.py": [38, 39]}}
-,"b11e11037f94f6fc23c5fd4052108edda6b57d05": "failed"
 }
 ,
 {
@@ -561,17 +548,14 @@
 "bug": {"38": {"core/engine.py": [19, 138, 141, 144, 156, 271], "core/scraper.py": [13, 110, 156, 205, 230], "downloadermiddlewares/robotstxt.py": [14, 62], "extensions/feedexport.py": [25, 187], "log.py": [11, 51], "pipelines/files.py": [28, 215], "pipelines/media.py": [11, 73, 130], "utils/log.py": [3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 61, 62, 63, 64, 65, 69], "utils/signal.py": [11, 50]}}
 ,"39": {"38": {"core/engine.py": [19, 138, 141, 144, 156, 271], "core/scraper.py": [13, 110, 156, 205, 230], "downloadermiddlewares/robotstxt.py": [14, 62], "extensions/feedexport.py": [25, 187], "log.py": [11, 51], "pipelines/files.py": [28, 215], "pipelines/media.py": [11, 73, 130], "utils/log.py": [3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 61, 62, 63, 64, 65, 69], "utils/signal.py": [11, 49]}}
 ,"40": {"38": {"contrib/downloadermiddleware/robotstxt.py": [13], "contrib/feedexport.py": [22], "contrib/pipeline/files.py": [28], "contrib/pipeline/media.py": [10], "utils/signal.py": [9]}}
-,"83dcf8aff91d0178ffbf4978fb757fc7e6d5d08c": "failed"
 }
 ,
 {
 "bug": {"39": {"item.py": [9, 30]}}
 ,"40": {"39": {"item.py": [9, 27]}}
-,"e8504a054cf1ab8e5887561f79101bac9803aad4": "failed"
 }
 ,
 {
 "bug": {"40": {"crawler.py": [195, 196]}}
-,"403e7c7c7059486c5a4c59f900a65378de2ba3d2": "failed"
 }
 ]

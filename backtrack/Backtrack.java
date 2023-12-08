@@ -15,7 +15,7 @@ public class Backtrack {
   public static void backtrack_diffs(String shafile, String diff_dir, String bugFix_shafile) {
     try {
       List<String> shas = Files.readAllLines(Paths.get(shafile), StandardCharsets.UTF_8);
-      shas.remove(shas.size()-1);//Last sha doesn't have a diff
+      //shas.remove(shas.size()-1);//Last sha doesn't have a diff
       List<String> bugFix_shas = Files.readAllLines(Paths.get(bugFix_shafile),
           StandardCharsets.UTF_8);
       List<DiffSet> all_diffs = new ArrayList<DiffSet>();
