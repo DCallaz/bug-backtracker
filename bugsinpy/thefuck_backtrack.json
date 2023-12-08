@@ -108,7 +108,6 @@
 {
 "bug": {"9": {"rules/git_push.py": [27]}}
 ,"10": {"9": {"rules/git_push.py": [27]}}
-,"11": {"9": {"rules/git_push.py": [27]}}
 ,"aa6b18d0ce64b1e9f902a617eb7b88b1b88877d0": "failed"
 }
 ,
@@ -213,14 +212,6 @@
 ,"21": {"19": {"rules/git_push_force.py": [15]}}
 ,"22": {"19": {"rules/git_push_force.py": [15]}}
 ,"23": {"19": {"rules/git_push_force.py": [15]}}
-,"24": {"19": {"rules/git_push_force.py": [16]}}
-,"25": {"19": {"rules/git_push_force.py": [16]}}
-,"26": {"19": {"rules/git_push_force.py": [16]}}
-,"27": {"19": {"rules/git_push_force.py": [16]}}
-,"28": {"19": {"rules/git_push_force.py": [16]}}
-,"29": {"19": {"rules/git_push_force.py": [16]}}
-,"30": {"19": {"rules/git_push_force.py": [16]}}
-,"31": {"19": {"rules/git_push_force.py": [16]}}
 ,"c67560864adcd43828a099afa9be7bf264623f0a": "failed"
 }
 ,
@@ -299,7 +290,6 @@
 ,"29": {"27": {"rules/open.py": [26]}}
 ,"30": {"27": {"rules/open.py": [26]}}
 ,"31": {"27": {"rules/open.py": [26]}}
-,"32": {"27": {"rules/open.py": [26]}}
 }
 ,
 {

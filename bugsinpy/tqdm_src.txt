@@ -1,1 +1,2 @@
 --include tqdm
+--exclude tqdm/tests
