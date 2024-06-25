@@ -16,13 +16,14 @@ for bug in jobj:
         projects[bug["project"]] = []
     projects[bug["project"]].append(bug)
 for proj in projects.keys():
+    proj_file = open("{}.csv".format(proj), 'w')
     project = projects[proj]
-    print(proj, len(project), sep=',')
+    print(proj, len(project), sep=',', file=proj_file)
     project.sort(key=lambda x: x["bugId"])
     #proj_shafile = csv.reader(open(proj+"_shas.csv"), delimiter=',')
     for i in range(0, len(project)):
         assert(project[i]["bugId"] == i+1)
-        print(project[i]["bugId"], project[i]["revisionId"], sep=',')
+        print(project[i]["bugId"], project[i]["revisionId"], sep=',', file=proj_file)
         for file in project[i]["changedFiles"].keys():
             diffs = project[i]["changedFiles"][file]
             lines = set()
@@ -38,4 +39,4 @@ for proj in projects.keys():
                 for x in diffs["deletes"]:
                     if -1 not in x:
                         lines.update(x)
-            print("#", file, toString(sorted(lines)), sep=',')
+            print("#", file, toString(sorted(lines)), sep=',', file=proj_file)
