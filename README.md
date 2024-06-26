@@ -10,6 +10,18 @@ To use this backtracking tool, you must have the commit hashes of the bug fixing
 commits for each bug. You may optionally use manually identified line numbers
 for the buggy locations, otherwise the lines of the bug fixing commits will be
 used. The options for each input type are given below.
+### Automatic identification by commits
+To automatically use the line numbers of the changes present in the bug fixing
+commits, simply produce a file of the form:
+```
+<commit hash #1>
+<commit hash #2>
+.
+.
+.
+```
+where each `<commit hash>` is the commit hash for the bug fixing commit. The
+commits in the file MUST be ordered from latest to oldest.
 ### Manually identified lines
 To use manually identified line numbers, each project should have a separate CSV
 file of the form:
@@ -39,18 +51,6 @@ dummy,3
 #,dummy/com/git/Three_two.java:6
 
 ```
-### Automatic identification by commits
-To automatically use the line numbers of the changes present in the bug fixing
-commits, simply produce a file of the form:
-```
-<commit hash #1>
-<commit hash #2>
-.
-.
-.
-```
-where each `<commit hash>` is the commit hash for the bug fixing commit. The
-commits in the file MUST be ordered from latest to oldest.
 ### Defects4J
 The manually identified line numbers of the `Defects4J` projects, available in
 the `defects4j-bugs.json` file from [Defects4J
