@@ -42,11 +42,14 @@ public class Diff extends BugFile implements Iterable<Chunk> {
   public void processDiff(String diff) {
     int adds = 0, rems = 0;
     int orig = 0, new_ = 0;
+    List<String> sadds = new ArrayList<String>();
+    List<String> srems = new ArrayList<String>();
+    Matcher get_line = null;
 
     int comps = 1;
-    for (String line : diff.split("\n")) {
+    for (String line : diff.split("\n\r?|\r\n?")) {
       String s = (line.length() > comps) ? line.substring(0, comps) : line+" ";
-      Matcher tmp = Pattern.compile("(?:([-+@\\\\])| )+").matcher(s);
+      Matcher tmp = Pattern.compile("(?:([-+@\\\\])| )+(.*)").matcher(s);
       tmp.matches();
       char c = (tmp.group(1) == null) ? ' ' : tmp.group(1).charAt(0);
       switch (c) {
@@ -69,6 +72,9 @@ public class Diff extends BugFile implements Iterable<Chunk> {
             }
           }
           adds++;
+          get_line = Pattern.compile("[-]+(.*)").matcher(line);
+          get_line.matches();
+          sadds.add(get_line.group(1));
           break;
         case '+':
           if (comps > 1) {
@@ -78,16 +84,21 @@ public class Diff extends BugFile implements Iterable<Chunk> {
             }
           }
           rems++;
+          get_line = Pattern.compile("[+]+(.*)").matcher(line);
+          get_line.matches();
+          srems.add(get_line.group(1));
           break;
         case '\\':
           continue;
         default:
           if (adds+rems > 0) {
-            touched.add(new Chunk(orig, new_, adds, rems));
+            touched.add(new Chunk(orig, new_, adds, rems, sadds, srems));
             new_ += adds + 1;
             orig += rems + 1;
             adds = 0;
             rems = 0;
+            sadds = new ArrayList<String>();
+            srems = new ArrayList<String>();
           } else {
             orig++;
             new_++;
@@ -95,7 +106,7 @@ public class Diff extends BugFile implements Iterable<Chunk> {
       }
     }
     if (adds+rems > 0) {
-      touched.add(new Chunk(orig, new_, adds, rems));
+      touched.add(new Chunk(orig, new_, adds, rems, sadds, srems));
     }
   }
 

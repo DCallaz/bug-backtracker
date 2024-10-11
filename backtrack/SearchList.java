@@ -17,6 +17,18 @@ public class SearchList<E extends Comparable<E>> extends ArrayList<E> {
     }
   }
 
+  public boolean addSorted(E obj) {
+    if (!super.contains(obj)) {
+      if (size() == 0 || obj.compareTo(get(size()-1)) > 0) {
+        super.add(obj);
+      } else {
+        int index = binarySearch(obj, false);
+        super.add(index, obj);
+      }
+    }
+    return true;
+  }
+
   public int binarySearch(E obj, boolean before) {
     int start = 0;
     int end = size()-1;

@@ -46,6 +46,7 @@ public class BugFile {
     }
     List<IntPair> updates = new ArrayList<IntPair>();
     List<Integer> toRemove = new ArrayList<Integer>();
+    List<Integer> toAdd = new ArrayList<Integer>();
     for (Chunk c : diff) {
       //System.out.println("Chunk "+c);
       int first = lines.binarySearch(c.getOrigStart(), false);
@@ -55,8 +56,25 @@ public class BugFile {
         if (c.getOrigEnd() >= lines.get(last) && last >= first) {
           for (int i = c.getOrigStart(); i < c.getOrigEnd(); i++) {
             if (lines.contains(i)) {
-              if (!noRemove) {
-                toRemove.add(lines.indexOf(i));
+              toRemove.add(lines.indexOf(i));
+              if (noRemove) {
+                String line = c.getOrigLine(i);
+                int max_lcs = 0;
+                int line_max = -1;
+                for (int j = c.getNewStart(); j < c.getNewEnd(); j++) {
+                  String newLine = c.getNewLine(j);
+                  int cur_lcs = LCS.lcs(line, newLine);
+                  if (cur_lcs > max_lcs) {
+                    max_lcs = cur_lcs;
+                    line_max = j;
+                  }
+                }
+                if (line_max != -1 && max_lcs >= 70) {
+                  // System.out.println("Swapping ("+max_lcs+"):");
+                  // System.out.println(line);
+                  // System.out.println(c.getNewLine(line_max));
+                  toAdd.add(line_max);
+                }
               }
             }
           }
@@ -77,6 +95,9 @@ public class BugFile {
     Collections.reverse(toRemove);
     for (int index : toRemove) {
       lines.remove(index);
+    }
+    for (int lineNum: toAdd) {
+      lines.addSorted(lineNum);
     }
   }
 
