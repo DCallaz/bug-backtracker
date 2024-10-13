@@ -37,10 +37,10 @@ for version in $versions; do
   defects4j checkout -p "$project" -v "${version}f" -w "$project-${version}f" &> /dev/null
   sha="$(grep "^$version," defects4j/$project.csv | cut -d ',' -f 2)"
   cd "$project-${version}f"
-  patch -p1 < "../projects/$project/diffs/$sha.diff" &> /dev/null
+  patch -R -p1 < "../projects/$project/diffs/$sha.diff" &> /dev/null
   cd ../
   #mkdir "temp_diffs"
-  diff -ru "$project-${version}b/$src" "$project-${version}f/$src" > "projects/$project/diffs/start-$version.diff"
+  diff -Nru "$project-${version}f/$src" "$project-${version}b/$src" > "projects/$project/diffs/start-$version.diff"
   #cp "projects/$project/diffs/$sha.diff" "temp_diffs/$sha.diff"
   #echo "$sha" > temp_shas
   #echo "temp" >> temp_shas

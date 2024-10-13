@@ -93,4 +93,13 @@ class LCS {
     // System.out.println(perc_white+" "+res_white+" "+res);
     return (int)(perc_white*res_white + (1-perc_white)*res);
   }
+
+  public static void main(String[] args) {
+    if (args.length < 2) {
+      System.out.println("USAGE: java lcs <string 1> <string 2>");
+    }
+    String text1 = args[0];
+    String text2 = args[1];
+    System.out.println(lcs(text1, text2));
+  }
 }
