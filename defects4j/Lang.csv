@@ -20,7 +20,7 @@ Lang,65
 10,afe5dff79fc23d222ba1f1481fbbf55e09d2e6da
 #,org/apache/commons/lang3/time/FastDateParser.java,304:307:308:309:310:311:312:313:314
 11,c821fafce06adefc040e8983fb12d49399a48627
-#,org/apache/commons/lang3/RandomStringUtils.java,245
+#,org/apache/commons/lang3/RandomStringUtils.java,234:245:248
 12,c9d786a4fe2639581047d878a64bab6fb24f1ab3
 #,org/apache/commons/lang3/RandomStringUtils.java,230:231:232:238
 13,bd59a1908a1df3364918be7b07782500616b15ac
@@ -40,15 +40,15 @@ Lang,65
 20,f08213cc4c35fd71e98aa5233fcb2db3333793a2
 #,org/apache/commons/lang3/StringUtils.java,3298:3383
 21,55f642725742513824975af0e5e91cb1920b6d72
-#,org/apache/commons/lang3/time/DateUtils.java,265
+#,org/apache/commons/lang3/time/DateUtils.java,262:265
 22,0b2b82ad923b0455cde93286e3f504a1abd0863b
 #,org/apache/commons/lang3/math/Fraction.java,582:583:584
 23,46356183872f2cba5e340993c6d85597a4f3cdbb
-#,org/apache/commons/lang3/text/ExtendedMessageFormat.java,
+#,org/apache/commons/lang3/text/ExtendedMessageFormat.java,72:74:75
 24,81903abbb25ff92597d5f1e3acc648d12bdee444
 #,org/apache/commons/lang3/math/NumberUtils.java,1413
 25,2bae68787d15c3d3540380164e62759485078ec1
-#,org/apache/commons/lang3/text/translate/EntityArrays.java,74:75:76:77:78:79:80:81:82:83:84:85:86:87:88:89:90:91:92:93:94:95:96:97:98:99:100
+#,org/apache/commons/lang3/text/translate/EntityArrays.java,31:74:75:76:77:78:79:80:81:82:83:84:85:86:87:88:89:90:91:92:93:94:95:96:97:98:99:100
 26,75d5b74a1a7ef68c5169f4b44cdf972c1ab07ee0
 #,org/apache/commons/lang3/time/FastDateFormat.java,820
 27,c2560c028173c3bc0a4627d4ce5ce221bcc9be66
@@ -56,7 +56,7 @@ Lang,65
 28,3e1afecc200d7e3be9537c95b7cf52a7c5031300
 #,org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java,62:63:64
 29,982e295053663787bb0396b81a8956c3c87dc25b
-#,org/apache/commons/lang3/SystemUtils.java,1672
+#,org/apache/commons/lang3/SystemUtils.java,1672:1673
 30,19b6372018c6b800f8e2bf1b85e15ef4cbd500da
 #,org/apache/commons/lang3/StringUtils.java,1376:1377:1381:1382:1383:1443:1455:1456:1457:1497:1533:1534:1539:1540:1576:1579:1678:1679:1683:1684:1685:1686
 31,38bf7048571f3bc8dd34d14691906426444e4381
